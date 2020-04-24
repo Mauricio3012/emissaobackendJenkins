@@ -1,0 +1,41 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "nrChassi": 10001,
+  "nrChassiVersao": 1,
+	"nrLocalizador": "977c79e3-2f2d-44dd-938a-548d5b487140",
+   "objetoSegurado": {
+        "lsCobertura": [
+            {
+                "nmCobertura": "Danos eletrico",
+                "nrCobertura": 12,
+                "vlImportanciaSegurada": 10000
+            }
+        ],
+        "objeto": {
+            "teste": "sim"
+        }
+    }
+}
+
+Status code: 200
+Response time: 608
+
+O Response é: 
+
+{
+    "dados": {
+        "nmIdentificador": 6058767843931507296
+    },
+    "message": "Objeto segurado incluido com sucesso",
+    "resource": "ObjetoSegurado",
+    "status": 200
+}

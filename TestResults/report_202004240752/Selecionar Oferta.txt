@@ -1,0 +1,26 @@
+
+
+Selecionar Oferta
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/oferta
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "4fddbec5-6c3c-4c3b-8bab-f12808bfd270",
+  "nrOferta": 20002,
+  "nrOfertaVersao": 1
+}
+
+Status code: 200
+Response time: 5054
+
+O Response é: 
+
+{
+    "message": "Ofertas selecionada com sucesso!",
+    "resource": "oferta",
+    "status": 200
+}

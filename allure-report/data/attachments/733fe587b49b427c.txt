@@ -1,0 +1,6 @@
+{
+    "dados": "ok",
+    "message": "Operação realizada com sucesso!",
+    "resource": "Assistencia",
+    "status": 200
+}

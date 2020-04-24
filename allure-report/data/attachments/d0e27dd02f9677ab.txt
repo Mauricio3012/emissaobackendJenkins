@@ -1,0 +1,5 @@
+{
+    "errors": "Não foi possível gerar contrato e proposta",
+    "message": "Error ao contratar a cotação",
+    "resource": "contrato"
+}

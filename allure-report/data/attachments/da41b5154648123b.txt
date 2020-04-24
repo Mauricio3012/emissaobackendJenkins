@@ -1,0 +1,5 @@
+{
+    "message": "De acordo registrado com sucesso",
+    "resource": "de_acordo",
+    "status": 200
+}

@@ -1,0 +1,11 @@
+{
+	"nrLocalizador": "5db92dd2-0557-496b-b2d5-624523b0c888",
+	"pessoa": {
+		"nmCpfCnpj": "66738229020",
+		"nmNome": "Marcelo Pereira Surcin",
+		"pessoaFisica": {
+			"dtNascimento": "2002-01-16"
+		}
+	},
+	"nmOperacao": "i"
+}

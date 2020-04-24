@@ -1,0 +1,26 @@
+
+
+Grava Periodicidade de Contratação
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "56d58d93-fd8c-40ca-a370-7f73ca1acf3d",
+  "nrPeriodicidadeContratacao": 5,
+  "nrChassi": 10001
+}
+
+Status code: 200
+Response time: 570
+
+O Response é: 
+
+{
+    "message": "Periodo de contratação registrado com sucesso",
+    "resource": "Vigência",
+    "status": 200
+}

@@ -1,0 +1,28 @@
+{
+  "idChassi": {{idChassi}},
+  "idCobertura": {{idCoberturaVendaval}},
+  "idGrupoRamo": {{idGrupoRamo}},
+  "inCoberturaBasica": false,
+  "inSemFranquia": true,
+  "lsChassiCoberturaDependenteForm": [
+
+  ],
+  "nmPeriodicidade": "SEGUNDOS",
+  "nmTipoFranquia": "VALOR",
+  "nrProcessoSusep": "string",
+  "pcIof": 7.38,
+  "pcMaxImportanciaSegurada": 100,
+  "pcMaxValorFranquia": 0,
+  "pcMinImportanciaSegurada": 0,
+  "pcMinValorFranquia": 0,
+  "pcTaxaNet": 0.07265,
+  "qtCarencia": 0,
+  "txIndicativo": "string",
+  "vlFranquia": 0,
+  "vlMaxFranquia": 0,
+  "vlMaxImportanciaSegurada": 150000,
+  "vlMinFranquia": 0,
+  "vlMinImportanciaSegurada": 1000,
+  "vlMinPremio": 0,
+  "vlPadImportanciaSegurada": 1000
+}

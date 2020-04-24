@@ -1,0 +1,28 @@
+
+
+Selecionar Assistência
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/assistencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "f8645298-e186-4f85-bc9d-128d3b6d8aa0",
+  	"nrAssistencia": 2,
+	"nrChassi": 10001,
+	"nrVersaoChassi": 1
+}
+
+Status code: 200
+Response time: 335
+
+O Response é: 
+
+{
+    "dados": "ok",
+    "message": "ok",
+    "resource": "Assistencia",
+    "status": 200
+}

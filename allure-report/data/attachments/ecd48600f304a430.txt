@@ -1,0 +1,10 @@
+{
+    "dados": {
+        "localizadorCotacao": "45451d21-6fb1-4b2d-b290-132b8fce3976",
+        "nrCotacao": 20200424000051,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}

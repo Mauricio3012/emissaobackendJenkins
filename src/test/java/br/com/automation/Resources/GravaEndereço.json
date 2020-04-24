@@ -1,0 +1,16 @@
+{
+	"nrLocalizador": "5db92dd2-0557-496b-b2d5-624523b0c888",
+	"endereco": {
+		"nmLogradouro": "R CANARIO",
+		"nmNumero": "100",
+		"nmComplemento": "null",
+		"nmBairro": "MOEMA",
+		"nmMunicipio": "SAO PAULO",
+		"nmUf": "SP",
+		"nmCep": "04521000",
+		"inPrincipal": false,
+		"tpEndereco": "R",
+		"nmPais": "Brasil"
+	},
+	"nmOperacao": "i"
+}

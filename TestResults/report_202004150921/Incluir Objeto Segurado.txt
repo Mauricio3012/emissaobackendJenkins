@@ -1,0 +1,128 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "nrChassi": 10001,
+  "nrChassiVersao": 1,
+	"nrLocalizador": "1a20a027-eae0-497a-abe7-b57afae0ef53",
+    "objetoSegurado": {
+        "lsCobertura": [
+            {
+                "nmCobertura": "Danos eletrico",
+                "nrCobertura": 12,
+                "vlImportanciaSegurada": 10000
+            }
+        ],
+        "objeto": {
+            "obLogradouro": {
+                "nrPergunta": "2",
+                "inObrigatorio": true,
+                "nmResposta": "Rua Luiz correia de melo",
+                "nmPergunta": "Qual o logradouro da residência?",
+                "nmPropriedade": "obLogradouro",
+                "nmTipo": "string"
+            },
+            "obCep": {
+                "nrPergunta": "1",
+                "inObrigatorio": true,
+                "nmResposta": "04726220",
+                "nmPergunta": "Qual o CEP da residência?",
+                "nmPropriedade": "obCEP",
+                "nmTipo": "string"
+            },
+            "obComplemento": {
+                "nrPergunta": "4",
+                "inObrigatorio": false,
+                "nmResposta": "AP 1803",
+                "nmPergunta": "Qual o complemento da residência?",
+                "nmPropriedade": "obComplemento",
+                "nmTipo": "string"
+            },
+            "obBairro": {
+                "nrPergunta": "5",
+                "inObrigatorio": true,
+                "nmResposta": "Vila Cruzeiro",
+                "nmPergunta": "Qual o bairro da residência?",
+                "nmPropriedade": "obBairro",
+                "nmTipo": "string"
+            },
+            "obUF": {
+                "nrPergunta": "7",
+                "inObrigatorio": true,
+                "nmResposta": "SP",
+                "nmPergunta": "Qual a UF (estado) da residência?",
+                "nmPropriedade": "obUf",
+                "nmTipo": "string"
+            },
+            "obCodigoMunicipioIBGE": {
+                "nrPergunta": "9",
+                "inObrigatorio": true,
+                "nmResposta": "211",
+                "nmPergunta": "O imóvel é próximo de favela?",
+                "nmPropriedade": "obCodigoMunicipioIBGE",
+                "nmTipo": "texto"
+            },
+            "obPais": {
+                "nrPergunta": "8",
+                "inObrigatorio": true,
+                "nmResposta": "Brasil",
+                "nmPergunta": "Qual o país da residência?",
+                "nmPropriedade": "obPais",
+                "nmTipo": "string"
+            },
+            "obNumeroLogradouro": {
+                "nrPergunta": "3",
+                "inObrigatorio": true,
+                "nmResposta": "86",
+                "nmPergunta": "Qual o numero da residência?",
+                "nmPropriedade": "obNumero",
+                "nmTipo": "string"
+            },
+            "obMunicipio": {
+                "nrPergunta": "6",
+                "inObrigatorio": true,
+                "nmResposta": "São Paulo",
+                "nmPergunta": "Qual o municipio da residência?",
+                "nmPropriedade": "obMunicipio",
+                "nmTipo": "string"
+            },
+            "obTipodeImovel":{
+            	"nrPergunta": "1",
+                "inObrigatorio": true,
+                "nmResposta": "Casa",
+                "nmPergunta": "Qual o tipo de imóvel?",
+                "nmPropriedade": "obTipodeImovel",
+                "nmTipo": "Seleção única"
+            },
+            "obTipodeUtilizacao":{
+            	"nrPergunta": "4",
+                "inObrigatorio": true,
+                "nmResposta": "Residencia",
+                "nmPergunta": "Qual o tipo de imóvel?",
+                "nmPropriedade": "obTipodeUtilizacao",
+                "nmTipo": "Seleção única"
+            }
+        }
+    }
+}
+
+Status code: 200
+Response time: 2143
+
+O Response é: 
+
+{
+    "dados": {
+        "nmIdentificador": 5769480583633605059
+    },
+    "message": "Objeto segurado incluido com sucesso",
+    "resource": "ObjetoSegurado",
+    "status": 200
+}

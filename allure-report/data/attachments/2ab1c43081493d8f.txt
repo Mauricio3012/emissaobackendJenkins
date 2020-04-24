@@ -1,0 +1,5 @@
+{
+    "message": "Periodo de contratação registrado com sucesso",
+    "resource": "Vigência",
+    "status": 200
+}

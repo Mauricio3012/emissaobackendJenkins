@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SAO-BXS3VW2",
+    "children" : [ {
+      "name" : "14680@SAO-BXS3VW2.main(1)",
+      "children" : [ {
+        "name" : "Fluxo de Cotação Backend com Proponente",
+        "uid" : "136100c5adbafb1e",
+        "parentUid" : "6ee0b1cb854f995c6d4513a0ab04a583",
+        "status" : "failed",
+        "time" : {
+          "start" : 1587763076581,
+          "stop" : 1587763098371,
+          "duration" : 21790
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ee0b1cb854f995c6d4513a0ab04a583"
+    } ],
+    "uid" : "ee8fa4e40f4672875372729190ec8397"
+  } ]
+}

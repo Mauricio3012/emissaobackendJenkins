@@ -1,0 +1,4 @@
+Consulta do cenário de ValidaDataProposta na Base de Dados
+
+Base de Dados utilizada é : jdbc:sqlserver://ultrond.cctdpwuhuznc.sa-east-1.rds.amazonaws.com;databaseName=apolice;user=usr_app_apolice;password=u5r_@pp_ap0lic&
+

@@ -1,0 +1,24 @@
+
+
+Registrar De acordo
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/deacordo
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "5c4c8597-dcb2-4050-8c35-bfcb3122eec2"
+}
+
+Status code: 200
+Response time: 580
+
+O Response é: 
+
+{
+    "message": "De acordo registrado com sucesso",
+    "resource": "de_acordo",
+    "status": 200
+}

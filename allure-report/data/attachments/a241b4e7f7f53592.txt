@@ -1,0 +1,12 @@
+{
+    "userName": "usr_ultron_cotacao",
+    "emailAddr": "t_tiagon@brasilseg.com.br",
+    "token": "eyKs`WQiNhHwR0SuSDQyORuzQjOpT3NiRVipSEuF`VBUPVSGc1KlTUFNRjuTXC8[WzhKWU1iLCKicGciNhKSUzH0OiJ9/dxJzdVHhOiJlO{g1NEj4Mi0x[VRmLUP0MjYuXUYzYh0iMWYv[kkyOVL{YTMhMBJjb3etaXRwNldyb2WvcyI7VxJjb2SiY2FwHhwiZ383ZXJtXV5jYRKeLCJmelVudG8qZCI7HkFkY{@1ZjU5MVE0MVPuNDQ2NR04YkOjLTFiLFQ1MkP2MTUvXhIsIoSwa2VtY2VzZRH7ImFkX3VzcxHrInNkc2BlIknhYXd{MlNvZ34qdG8tb3lnblmtLnV{[YIuYVSuaW4hMBJhdYSnX3RqcVUiOkD0ODc2OkMxMkjrIml{bxI6Ili1dHB{NmwvXB8kb2dt`YRvLVmjcC50bx1lYYO1LTEtXV1hel8tYXd{MlNvbWvwdXMu[VFzdB1yXzFELUNiSVq[ZyIrHlV4cBH7MTU5O{c2NkbxOSwh`VF0IknyNTg2O{YzMUH4LCJpeFkiOhKhZTI2XUc5OB0jNWM{MUQ3ZEHuOTdiLx1kOVH2ODc0XVY0MkDhLCJkcFllboSgaWQhNhIyNlioY29wXYNsZlSsMDM2[UlzdYKybDZ{bBIsIoW{ZXJtXV1lIknhdXNxY2VsdIKwbl9kc2RhY3GwIn0/gQSI9Bu,IniPPUVpLX59-0d1u2jeBmuYOVt2qNeADJrhGf0hGCKb6lukSh-8YXguEMrlZAbQlNlHO5G`ePFrEhYV2JiH3u_rUtvJNS6d5mgxO4SkJiGkvKdoQEVItphQ71T0LLqAesMp0ggQx7O_6S{8ubuiL60K1yBU_MxmX`8uVLgg0IX[qtr1rGTDZSmW`ioxI,2OhKzcTfTzvyufjtp0Vqnkpgq7mTEXrfJFUMcUDAhh3JmqiuP,ypJ83FvoWu`DjmU6l1dMiEuqJIhe7x4W0tJnlc_qqFRIGU45KS4ggtNX8fXNsBZBYYcdceG[aalnBiy9t29,isy90XSoof",
+    "profile": [
+        "COTACAO",
+        "GOVERNANCA"
+    ],
+    "nmIdSessao": "48fa9d2a-0f77-4a22-a057-f0dbc599af7e",
+    "date": "2020-04-24 09:18:49",
+    "expiredAt": null
+}

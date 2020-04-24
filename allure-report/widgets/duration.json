@@ -1,0 +1,11 @@
+[ {
+  "uid" : "136100c5adbafb1e",
+  "name" : "Fluxo de Cotação Backend com Proponente",
+  "time" : {
+    "start" : 1587763076581,
+    "stop" : 1587763098371,
+    "duration" : 21790
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

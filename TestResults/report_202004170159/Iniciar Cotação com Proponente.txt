@@ -1,0 +1,109 @@
+
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": 1,
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "SÃ£o Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwight Howard",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwight Howard",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa fÃ­sica",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 590
+
+O Response é: 
+
+{
+    "dados": {
+        "localizadorCotacao": "971b343d-4662-4709-8b25-f14d0555946f",
+        "nrCotacao": 20200417000014,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}

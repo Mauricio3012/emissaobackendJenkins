@@ -1,0 +1,21 @@
+{
+  "idGrupoRamo": {{idGrupoRamo}},
+  "idPeriodicidade": 3,
+  "idSeguradora": 1,
+  "idTipoEmissao": 2,
+  "lsIdTipoContratacao": [
+    2
+  ],
+  "lsTags": [
+    "string"
+  ],
+  "nmChassi": "BB Seguro Residencial",
+  "nrPrazoRecusaProposta": 45,
+  "nrProcessoSusep": "15414.003077/2009-93",
+  "nrValidadeCotacao": 2,
+  "permiteRenovacao": true,
+  "qtMaxPeriodicidade": 156,
+  "qtMinPeriodicidade": 100,
+  "txDescricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante massa, luctus eu velit id, placerat varius augue. Phasellus mattis, ipsum vel tempus efficitur, lectus justo blandit tortor, at finibus ex augue quis massa. Mauris vestibulum eleifend ante quis aliquet. Vivamus pharetra enim l",
+  "vlLimiteTecnico": 520
+}

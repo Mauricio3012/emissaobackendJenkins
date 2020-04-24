@@ -1,0 +1,82 @@
+{
+	"nmOperacao": "i",
+	"nrLocalizador": "5db92dd2-0557-496b-b2d5-624523b0c888",
+	"nmIdentificador": "",
+	"nrSequencial": 1,
+	"objetoSegurado": {
+		"objeto": {
+			"obCEP": {
+				"nrPergunta": 1,
+				"nmPergunta": "Qual o CEP da residência?",
+				"nmResposta": "04521000",
+				"inObrigatorio": true,
+				"nmPropriedade": "obCEP",
+				"nmTipo": "string"
+			},
+			"obLogradouro": {
+				"nrPergunta": 2,
+				"nmPergunta": "Qual o logradouro da residência?",
+				"nmResposta": "Rua Azul",
+				"inObrigatorio": true,
+				"nmPropriedade": "obLogradouro",
+				"nmTipo": "string"
+			},
+			"obNumero": {
+				"nrPergunta": 3,
+				"nmPergunta": "Qual o numero da residência?",
+				"nmResposta": "1000",
+				"inObrigatorio": true,
+				"nmPropriedade": "obNumero",
+				"nmTipo": "string"
+			},
+			"obComplemento": {
+				"nrPergunta": 4,
+				"nmPergunta": "Qual o complemento da residência?",
+				"nmResposta": "teste",
+				"inObrigatorio": false,
+				"nmPropriedade": "obComplemento",
+				"nmTipo": "string"
+			},
+			"obBairro": {
+				"nrPergunta": 5,
+				"nmPergunta": "Qual o bairro da residência?",
+				"nmResposta": "Santo Amaro",
+				"inObrigatorio": true,
+				"nmPropriedade": "obBairro",
+				"nmTipo": "string"
+			},
+			"obMunicipio": {
+				"nrPergunta": 6,
+				"nmPergunta": "Qual o municipio da residência?",
+				"nmResposta": "SAO PAULO",
+				"inObrigatorio": true,
+				"nmPropriedade": "obMunicipio",
+				"nmTipo": "string"
+			},
+			"obUf": {
+				"nrPergunta": 7,
+				"nmPergunta": "Qual a UF (estado) da residência?",
+				"nmResposta": "SP",
+				"inObrigatorio": true,
+				"nmPropriedade": "obUf",
+				"nmTipo": "string"
+			},
+			"obPais": {
+				"nrPergunta": 8,
+				"nmPergunta": "Qual o país da residência?",
+				"nmResposta": "Brasil",
+				"inObrigatorio": true,
+				"nmPropriedade": "obPais",
+				"nmTipo": "string"
+			},
+			"obProximoFavela": {
+				"nrPergunta": 9,
+				"nmPergunta": "O imóvel é próximo de favela?",
+				"nmResposta": "1",
+				"inObrigatorio": true,
+				"nmPropriedade": "obProximoFavela",
+				"nmTipo": "bool"
+			}
+		}
+	}
+}

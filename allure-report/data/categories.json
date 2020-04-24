@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "1 expectation failed.\nJSON path message doesn't match.\nExpected: Cotação contrada com sucesso\n  Actual: Error ao contratar a cotação\n",
+      "children" : [ {
+        "name" : "Fluxo de Cotação Backend com Proponente",
+        "uid" : "136100c5adbafb1e",
+        "parentUid" : "5cbc2c3adbbfd7e8bfb7acbd0f88c70a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1587763076581,
+          "stop" : 1587763098371,
+          "duration" : 21790
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5cbc2c3adbbfd7e8bfb7acbd0f88c70a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

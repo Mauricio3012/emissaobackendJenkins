@@ -1,0 +1,125 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada �: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisi��o POST
+
+O body utilizado �: 
+
+{
+  "nrChassi": 10001,
+  "nrChassiVersao": 1,
+	"nrLocalizador": "45451d21-6fb1-4b2d-b290-132b8fce3976",
+    "objetoSegurado": {
+        "lsCobertura": [
+            {
+                "nmCobertura": "Danos eletrico",
+                "nrCobertura": 12,
+                "vlImportanciaSegurada": 10000
+            }
+        ],
+        "objeto": {
+            "obLogradouro": {
+                "nrPergunta": "2",
+                "inObrigatorio": true,
+                "nmResposta": "Rua Luiz correia de melo",
+                "nmPergunta": "Logradouro",
+                "nmPropriedade": "obLogradouro",
+                "nmTipo": "string"
+            },
+            "obCep": {
+                "nrPergunta": "1",
+                "inObrigatorio": true,
+                "nmResposta": "04726220",
+                "nmPergunta": "CEP",
+                "nmPropriedade": "obCEP",
+                "nmTipo": "string"
+            },
+            "obComplemento": {
+                "nrPergunta": "4",
+                "inObrigatorio": false,
+                "nmResposta": "AP 1803",
+                "nmPergunta": "Complemento",
+                "nmPropriedade": "obComplemento",
+                "nmTipo": "string"
+            },
+            "obBairro": {
+                "nrPergunta": "5",
+                "inObrigatorio": true,
+                "nmResposta": "Vila Cruzeiro",
+                "nmPergunta": "Bairro",
+                "nmPropriedade": "obBairro",
+                "nmTipo": "string"
+            },
+            "obUF": {
+                "nrPergunta": "7",
+                "inObrigatorio": true,
+                "nmResposta": "SP",
+                "nmPergunta": "UF",
+                "nmPropriedade": "obUf",
+                "nmTipo": "string"
+            },
+            "obCodigoMunicipioIBGE": {
+                "nrPergunta": "9",
+                "inObrigatorio": true,
+                "nmResposta": "211",
+                "nmPergunta": "Código Município IBGE",
+                "nmPropriedade": "obCodigoMunicipioIBGE",
+                "nmTipo": "texto"
+            },
+            "obPais": {
+                "nrPergunta": "8",
+                "inObrigatorio": true,
+                "nmResposta": "Brasil",
+                "nmPergunta": "Qual o país da residência?",
+                "nmPropriedade": "obPais",
+                "nmTipo": "string"
+            },
+            "obNumeroLogradouro": {
+                "nrPergunta": "3",
+                "inObrigatorio": true,
+                "nmResposta": "86",
+                "nmPergunta": "Número do logradouro",
+                "nmPropriedade": "obNumero",
+                "nmTipo": "string"
+            },
+            "obMunicipio": {
+                "nrPergunta": "6",
+                "inObrigatorio": true,
+                "nmResposta": "São Paulo",
+                "nmPergunta": "Nome do município",
+                "nmPropriedade": "obMunicipio",
+                "nmTipo": "string"
+            },
+            "obTipodeImovel":{
+            	"nmPergunta": "Qual o tipo de imóvel?",
+                    "nmPropriedade": "obTipodeImovel",
+                    "nmResposta": "casa",
+                    "nmTipo": "Seleção única",
+                    "nrPergunta": 1
+            },
+            "obTipodeUtilizacao":{
+            "nmPergunta": "Qual utilização do imóvel?",
+                    "nmPropriedade": "obTipodeUtilizacao",
+                    "nmResposta": "Lazer",
+                    "nmTipo": "Seleção única",
+                    "nrPergunta": 4	
+            }
+        
+        
+        }
+    }
+}
+
+Status code: 400
+Response time: 571
+
+O Response �: 
+
+{
+    "errors": "Chave obTipoDeImovel obrigatorio",
+    "message": "Chave obTipoDeImovel obrigatorio",
+    "resource": "ObjetoSegurado"
+}

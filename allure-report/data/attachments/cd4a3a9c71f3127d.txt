@@ -1,0 +1,5 @@
+{
+    "errors": "Chave obTipoDeImovel obrigatorio",
+    "message": "Chave obTipoDeImovel obrigatorio",
+    "resource": "ObjetoSegurado"
+}

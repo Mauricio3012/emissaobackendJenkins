@@ -1,0 +1,112 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "nrChassi": 10001,
+  "nrChassiVersao": 1,
+	"nrLocalizador": "2900bf3a-029d-40e3-b6f8-fef74ea376c2",
+  "objetoSegurado": {
+        "lsCobertura": [
+            {
+                "nmCobertura": "Danos eletrico",
+                "nrCobertura": 1,
+                "vlImportanciaSegurada": 10000
+            }
+        ],
+        "objeto": {
+            "obLogradouro": {
+                "nrPergunta": "2",
+                "inObrigatorio": true,
+                "nmResposta": "PC JOSE E DA SILVEIRA",
+                "nmPergunta": "Qual o logradouro da residência?",
+                "nmPropriedade": "obLogradouro",
+                "nmTipo": "string"
+            },
+            "obCEP": {
+                "nrPergunta": "1",
+                "inObrigatorio": true,
+                "nmResposta": "03576140",
+                "nmPergunta": "Qual o CEP da residência?",
+                "nmPropriedade": "obCEP",
+                "nmTipo": "string"
+            },
+            "obComplemento": {
+                "nrPergunta": "4",
+                "inObrigatorio": false,
+                "nmResposta": "casa",
+                "nmPergunta": "Qual o complemento da residência?",
+                "nmPropriedade": "obComplemento",
+                "nmTipo": "string"
+            },
+            "obBairro": {
+                "nrPergunta": "5",
+                "inObrigatorio": true,
+                "nmResposta": "JARDIM SANTA MARIA",
+                "nmPergunta": "Qual o bairro da residência?",
+                "nmPropriedade": "obBairro",
+                "nmTipo": "string"
+            },
+            "obUf": {
+                "nrPergunta": "7",
+                "inObrigatorio": true,
+                "nmResposta": "SP",
+                "nmPergunta": "Qual a UF (estado) da residência?",
+                "nmPropriedade": "obUf",
+                "nmTipo": "string"
+            },
+            "obProximoFavela": {
+                "nrPergunta": "9",
+                "inObrigatorio": true,
+                "nmResposta": "0",
+                "nmPergunta": "O imóvel é próximo de favela?",
+                "nmPropriedade": "obProximoFavela",
+                "nmTipo": "bool"
+            },
+            "obPais": {
+                "nrPergunta": "8",
+                "inObrigatorio": true,
+                "nmResposta": "Brasil",
+                "nmPergunta": "Qual o país da residência?",
+                "nmPropriedade": "obPais",
+                "nmTipo": "string"
+            },
+            "obNumero": {
+                "nrPergunta": "3",
+                "inObrigatorio": true,
+                "nmResposta": "778",
+                "nmPergunta": "Qual o numero da residência?",
+                "nmPropriedade": "obNumero",
+                "nmTipo": "string"
+            },
+            "obMunicipio": {
+                "nrPergunta": "6",
+                "inObrigatorio": true,
+                "nmResposta": "SAO PAULO",
+                "nmPergunta": "Qual o municipio da residência?",
+                "nmPropriedade": "obMunicipio",
+                "nmTipo": "string"
+            }
+        }
+    }
+}
+
+Status code: 200
+Response time: 774
+
+O Response é: 
+
+{
+    "dados": {
+        "nmIdentificador": 4995971127328408117
+    },
+    "message": "Objeto segurado incluido com sucesso",
+    "resource": "ObjetoSegurado",
+    "status": 200
+}

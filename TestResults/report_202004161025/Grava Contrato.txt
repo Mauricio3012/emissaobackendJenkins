@@ -1,0 +1,24 @@
+
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "b8d67187-75df-44ff-8323-19a78969d255"
+}
+
+Status code: 400
+Response time: 2565
+
+O Response é: 
+
+{
+    "errors": "Nenhuma oferta selecionada na cotação",
+    "message": "Error ao contratar a cotação",
+    "resource": "contrato"
+}

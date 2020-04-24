@@ -1,0 +1,29 @@
+
+
+Selecionar Plano
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/plano
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "f13d862c-bcbb-4d99-ae90-55ffbf27dc67",
+  "nrPlano": 1
+}
+
+Status code: 200
+Response time: 355
+
+O Response é: 
+
+{
+    "dados": [
+        null,
+        "Nenhuma oferta selecionada na cotação"
+    ],
+    "message": "Plano alterado com sucesso",
+    "resource": "Plano",
+    "status": 200
+}

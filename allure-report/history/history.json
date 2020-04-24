@@ -1,0 +1,459 @@
+{
+  "827bdf83ca284964688dbe6ec69dde3d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "519debd6a4fc6d94",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/519debd6a4fc6d94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579124689200,
+        "stop" : 1579124710155,
+        "duration" : 20955
+      }
+    }, {
+      "uid" : "ea1ebef9dbdd612f",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/ea1ebef9dbdd612f",
+      "status" : "failed",
+      "statusDetails" : "StatusCode esperado : 200 e o StatusCode recebido : 502 não são o mesmo. Response: <html>\n  <head>\n    <title>502 Bad Gateway</title>\n  </head>\n  <body bgcolor=\"white\">\n    <center>\n      <h1>502 Bad Gateway</h1>\n    </center>\n  </body>\n</html>",
+      "time" : {
+        "start" : 1579094725212,
+        "stop" : 1579094745828,
+        "duration" : 20616
+      }
+    }, {
+      "uid" : "74ad1440a9a35144",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/74ad1440a9a35144",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579037661061,
+        "stop" : 1579037678664,
+        "duration" : 17603
+      }
+    }, {
+      "uid" : "5f3af48792ff20fa",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/5f3af48792ff20fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579036741934,
+        "stop" : 1579036759998,
+        "duration" : 18064
+      }
+    } ]
+  },
+  "a08740ab5e65a7b8e56951bce2996e8a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "af9902dfb89a8f58",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/af9902dfb89a8f58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579124731937,
+        "stop" : 1579124754795,
+        "duration" : 22858
+      }
+    }, {
+      "uid" : "d6fda8a31ff4a5b8",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/d6fda8a31ff4a5b8",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h4[text()='Residencial']\"}\n  (Session info: chrome=79.0.3945.117)\n  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'\nSystem info: host: 'SAO-BXS3VW2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\\WINDOWS\\TEMP\\scoped_dir2...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}\nSession ID: c5e5341dff2762f020f1cdab17c80f5d\n*** Element info: {Using=xpath, value=//h4[text()='Residencial']}",
+      "time" : {
+        "start" : 1579094756724,
+        "stop" : 1579094767061,
+        "duration" : 10337
+      }
+    }, {
+      "uid" : "eb1df62d2ee7761d",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/eb1df62d2ee7761d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579037697113,
+        "stop" : 1579037717557,
+        "duration" : 20444
+      }
+    }, {
+      "uid" : "e054bc8552b17f4b",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/e054bc8552b17f4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579036778924,
+        "stop" : 1579036800529,
+        "duration" : 21605
+      }
+    } ]
+  },
+  "34e802717ad5735159cd943f5b7e246c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 18
+    },
+    "items" : [ {
+      "uid" : "ac51caa839929755",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/ac51caa839929755",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579124636500,
+        "stop" : 1579124666850,
+        "duration" : 30350
+      }
+    }, {
+      "uid" : "c2592db62045009a",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/c2592db62045009a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579094669976,
+        "stop" : 1579094703814,
+        "duration" : 33838
+      }
+    }, {
+      "uid" : "df4b86486562517e",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/df4b86486562517e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579037620348,
+        "stop" : 1579037642613,
+        "duration" : 22265
+      }
+    }, {
+      "uid" : "f8e1bfc2504bec32",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/f8e1bfc2504bec32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579036698685,
+        "stop" : 1579036721857,
+        "duration" : 23172
+      }
+    }, {
+      "uid" : "9fb980317b5ce552",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/19/allure/#testresult/9fb980317b5ce552",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579036549888,
+        "stop" : 1579036574204,
+        "duration" : 24316
+      }
+    } ]
+  },
+  "fc98e368a7dc4d22f114844aaa22a50f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "23e0b73ca788f1a6",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/23e0b73ca788f1a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579124710171,
+        "stop" : 1579124731928,
+        "duration" : 21757
+      }
+    }, {
+      "uid" : "91527c61e387cbc0",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/91527c61e387cbc0",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h4[text()='Residencial']\"}\n  (Session info: chrome=79.0.3945.117)\n  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'\nSystem info: host: 'SAO-BXS3VW2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\\WINDOWS\\TEMP\\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}\nSession ID: e1e5b2f0c16677de7b0cfb594491cb3c\n*** Element info: {Using=xpath, value=//h4[text()='Residencial']}",
+      "time" : {
+        "start" : 1579094745845,
+        "stop" : 1579094756715,
+        "duration" : 10870
+      }
+    }, {
+      "uid" : "8bee235d2f2b7784",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/8bee235d2f2b7784",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579037678673,
+        "stop" : 1579037697107,
+        "duration" : 18434
+      }
+    }, {
+      "uid" : "1d7e97bd8d2fc20f",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/1d7e97bd8d2fc20f",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path data.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>]\n  Actual: null\n",
+      "time" : {
+        "start" : 1579036760007,
+        "stop" : 1579036778917,
+        "duration" : 18910
+      }
+    } ]
+  },
+  "a08647641b5bb6c15ec55772e3f9febb" : {
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "items" : [ {
+      "uid" : "136100c5adbafb1e",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/153/allure/#testresult/136100c5adbafb1e",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path message doesn't match.\nExpected: Cotação contrada com sucesso\n  Actual: Error ao contratar a cotação\n",
+      "time" : {
+        "start" : 1587763076581,
+        "stop" : 1587763098371,
+        "duration" : 21790
+      }
+    }, {
+      "uid" : "f575432579c4a5d4",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/152/allure/#testresult/f575432579c4a5d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587733966054,
+        "stop" : 1587733988815,
+        "duration" : 22761
+      }
+    }, {
+      "uid" : "d259986304b10b1c",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/151/allure/#testresult/d259986304b10b1c",
+      "status" : "failed",
+      "statusDetails" : "java.lang.AssertionError",
+      "time" : {
+        "start" : 1587665722623,
+        "stop" : 1587665775942,
+        "duration" : 53319
+      }
+    }, {
+      "uid" : "f003952bbc97b7e1",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/150/allure/#testresult/f003952bbc97b7e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587585806097,
+        "stop" : 1587585864853,
+        "duration" : 58756
+      }
+    }, {
+      "uid" : "e3dc46876fb2d0a",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/149/allure/#testresult/e3dc46876fb2d0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587149766944,
+        "stop" : 1587149783341,
+        "duration" : 16397
+      }
+    } ]
+  },
+  "8cf3a1b1b187b20a52a263283abde8ce" : {
+    "statistic" : {
+      "failed" : 13,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 100,
+      "unknown" : 0,
+      "total" : 113
+    },
+    "items" : [ {
+      "uid" : "86805dfd218647c1",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/137/allure/#testresult/86805dfd218647c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1582141858530,
+        "stop" : 1582141865007,
+        "duration" : 6477
+      }
+    }, {
+      "uid" : "1ba56a455496c28b",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/136/allure/#testresult/1ba56a455496c28b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580931196516,
+        "stop" : 1580931201739,
+        "duration" : 5223
+      }
+    }, {
+      "uid" : "4559ea37638d5ee",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/135/allure/#testresult/4559ea37638d5ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580930528970,
+        "stop" : 1580930534339,
+        "duration" : 5369
+      }
+    }, {
+      "uid" : "3ecf722850470943",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/134/allure/#testresult/3ecf722850470943",
+      "status" : "failed",
+      "statusDetails" : "java.lang.AssertionError",
+      "time" : {
+        "start" : 1580827288407,
+        "stop" : 1580827423727,
+        "duration" : 135320
+      }
+    }, {
+      "uid" : "17234af125c74778",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/133/allure/#testresult/17234af125c74778",
+      "status" : "passed",
+      "time" : {
+        "start" : 1580303097161,
+        "stop" : 1580303103663,
+        "duration" : 6502
+      }
+    } ]
+  },
+  "14d15a774c8e0d93f45cc912c6d6ef98" : {
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 5
+    },
+    "items" : [ {
+      "uid" : "bea4b6404dff1548",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/bea4b6404dff1548",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path dados.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>, <false>, <false>, <false>]\n  Actual: [false]\n",
+      "time" : {
+        "start" : 1579124667027,
+        "stop" : 1579124689189,
+        "duration" : 22162
+      }
+    }, {
+      "uid" : "1e8b2c61a4fff112",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/1e8b2c61a4fff112",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path dados.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>, <false>, <false>, <false>]\n  Actual: [false]\n",
+      "time" : {
+        "start" : 1579094703977,
+        "stop" : 1579094725196,
+        "duration" : 21219
+      }
+    }, {
+      "uid" : "d94be5ebb16f243c",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/d94be5ebb16f243c",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path dados.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>, <false>, <false>, <false>]\n  Actual: [false]\n",
+      "time" : {
+        "start" : 1579037642737,
+        "stop" : 1579037661052,
+        "duration" : 18315
+      }
+    }, {
+      "uid" : "b6d6ed80e11eb31",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/21/allure/#testresult/b6d6ed80e11eb31",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path dados.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>, <false>, <false>, <false>]\n  Actual: [false]\n",
+      "time" : {
+        "start" : 1579037421329,
+        "stop" : 1579037444919,
+        "duration" : 23590
+      }
+    }, {
+      "uid" : "ed17f63595bdbf50",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/ed17f63595bdbf50",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path data.inSelecionado doesn't match.\nExpected: iterable containing [<false>, <true>, <false>, <false>, <false>]\n  Actual: null\n",
+      "time" : {
+        "start" : 1579036722020,
+        "stop" : 1579036741921,
+        "duration" : 19901
+      }
+    } ]
+  },
+  "df379f382acc3d8f2835e56765080aa3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "3b7f0522987e0f47",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/24/allure/#testresult/3b7f0522987e0f47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579124754828,
+        "stop" : 1579124775721,
+        "duration" : 20893
+      }
+    }, {
+      "uid" : "b9e47a633559fcbd",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/23/allure/#testresult/b9e47a633559fcbd",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h4[text()='Residencial']\"}\n  (Session info: chrome=79.0.3945.117)\n  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'\nSystem info: host: 'SAO-BXS3VW2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\\WINDOWS\\TEMP\\scoped_dir1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.117, webStorageEnabled: true}\nSession ID: 479e18203ec88656be5a36484818b79f\n*** Element info: {Using=xpath, value=//h4[text()='Residencial']}",
+      "time" : {
+        "start" : 1579094767075,
+        "stop" : 1579094777668,
+        "duration" : 10593
+      }
+    }, {
+      "uid" : "3ef5b13c637a4b26",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/22/allure/#testresult/3ef5b13c637a4b26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579037717567,
+        "stop" : 1579037736007,
+        "duration" : 18440
+      }
+    }, {
+      "uid" : "b81ff4fee82020b5",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/20/allure/#testresult/b81ff4fee82020b5",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nJSON path data.oferta.lsPlano[0].lsChassi[0].lsObjetoSegurado[0].objeto.obBairro.nmResposta doesn't match.\nExpected: Chácara Santo Antônio\n  Actual: null\n",
+      "time" : {
+        "start" : 1579036800540,
+        "stop" : 1579036819853,
+        "duration" : 19313
+      }
+    } ]
+  },
+  "2c1a716146cfacbdfdbe8bc1e70cee6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f0ab9ae82bd0ee74",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/6/allure/#testresult/f0ab9ae82bd0ee74",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1578680325329,
+        "stop" : 1578680349961,
+        "duration" : 24632
+      }
+    }, {
+      "uid" : "5142445c0049b418",
+      "reportUrl" : "http://192.168.56.1:8080/job/backend/5/allure/#testresult/5142445c0049b418",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1578670731774,
+        "stop" : 1578670755407,
+        "duration" : 23633
+      }
+    } ]
+  }
+}

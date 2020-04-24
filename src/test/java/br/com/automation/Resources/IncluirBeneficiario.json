@@ -1,0 +1,12 @@
+{
+	"nrLocalizador": "10e884da-83f6-4f76-8523-7d424d109954",
+	"nmOperacao": "I",
+	"nrChassi": 10000,
+	"nmIdentificadorObjetoSegurado": "18225178005679409436",
+	"nmIdentificador": "",
+	"beneficiario": {
+		"nmNome": "Mauricio",
+		"inProprietario": true,
+		"nmCpfCnpj": "38995063831"
+	}
+}

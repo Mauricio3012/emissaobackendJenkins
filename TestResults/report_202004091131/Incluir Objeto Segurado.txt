@@ -1,0 +1,112 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "nrChassi": 10001,
+  "nrChassiVersao": 1,
+	"nrLocalizador": "0f4f3e8c-55b5-4f64-b768-1aac5b4183c1",
+    "objetoSegurado": {
+        "lsCobertura": [
+            {
+                "nmCobertura": "Danos eletrico",
+                "nrCobertura": 12,
+                "vlImportanciaSegurada": 10000
+            }
+        ],
+        "objeto": {
+            "obLogradouro": {
+                "nrPergunta": "2",
+                "inObrigatorio": true,
+                "nmResposta": "Rua Luiz correia de melo",
+                "nmPergunta": "Qual o logradouro da residência?",
+                "nmPropriedade": "obLogradouro",
+                "nmTipo": "string"
+            },
+            "obCep": {
+                "nrPergunta": "1",
+                "inObrigatorio": true,
+                "nmResposta": "04521000",
+                "nmPergunta": "Qual o CEP da residência?",
+                "nmPropriedade": "obCep",
+                "nmTipo": "string"
+            },
+            "obComplemento": {
+                "nrPergunta": "4",
+                "inObrigatorio": false,
+                "nmResposta": "AP 1803",
+                "nmPergunta": "Qual o complemento da residência?",
+                "nmPropriedade": "obComplemento",
+                "nmTipo": "string"
+            },
+            "obBairro": {
+                "nrPergunta": "5",
+                "inObrigatorio": true,
+                "nmResposta": "Vila Cruzeiro",
+                "nmPergunta": "Qual o bairro da residência?",
+                "nmPropriedade": "obBairro",
+                "nmTipo": "string"
+            },
+            "obUF": {
+                "nrPergunta": "7",
+                "inObrigatorio": true,
+                "nmResposta": "SP",
+                "nmPergunta": "Qual a UF (estado) da residência?",
+                "nmPropriedade": "obUF",
+                "nmTipo": "string"
+            },
+            "obProximoFavela": {
+                "nrPergunta": "9",
+                "inObrigatorio": true,
+                "nmResposta": "0",
+                "nmPergunta": "O imóvel é próximo de favela?",
+                "nmPropriedade": "obProximoFavela",
+                "nmTipo": "bool"
+            },
+            "obPais": {
+                "nrPergunta": "8",
+                "inObrigatorio": true,
+                "nmResposta": "Brasil",
+                "nmPergunta": "Qual o país da residência?",
+                "nmPropriedade": "obPais",
+                "nmTipo": "string"
+            },
+            "obNumeroLogradouro": {
+                "nrPergunta": "3",
+                "inObrigatorio": true,
+                "nmResposta": "86",
+                "nmPergunta": "Qual o numero da residência?",
+                "nmPropriedade": "obNumeroLogradouro",
+                "nmTipo": "string"
+            },
+            "obMunicipio": {
+                "nrPergunta": "6",
+                "inObrigatorio": true,
+                "nmResposta": "São Paulo",
+                "nmPergunta": "Qual o municipio da residência?",
+                "nmPropriedade": "obMunicipio",
+                "nmTipo": "string"
+            }
+        }
+    }
+}
+
+Status code: 200
+Response time: 693
+
+O Response é: 
+
+{
+    "dados": {
+        "nmIdentificador": 4976776661526282250
+    },
+    "message": "Objeto segurado incluido com sucesso",
+    "resource": "ObjetoSegurado",
+    "status": 200
+}

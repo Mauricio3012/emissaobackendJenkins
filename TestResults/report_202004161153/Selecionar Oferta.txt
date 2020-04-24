@@ -1,0 +1,31 @@
+
+
+Selecionar Oferta
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/oferta
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "f13d862c-bcbb-4d99-ae90-55ffbf27dc67",
+  "nrOferta": 20002,
+  "nrOfertaVersao": 1
+}
+
+Status code: 504
+Response time: 61106
+
+O Response é: 
+
+<html>
+  <head>
+    <title>504 Gateway Time-out</title>
+  </head>
+  <body bgcolor="white">
+    <center>
+      <h1>504 Gateway Time-out</h1>
+    </center>
+  </body>
+</html>
