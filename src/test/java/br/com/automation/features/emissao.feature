@@ -6,7 +6,7 @@ Funcionalidade: Validação dos endpoints de Consulta da Squad de Emissão
   Cenario: Gerar Token
   Dado carrego a URL de "Gerar Token"
   Quando envio o comando POST para produto
-  Entao o status de retorno é 200 e o tempo de resposta é menor ou igual a 5000 milisegundos
+  Entao o status de retorno é 200 e o tempo de resposta é menor ou igual a 20000 milisegundos
 
   @ConsultaProponente @ConsultaApólice @emissao
   Cenario: Verificar se API de Consulta de Contrato por Proponente está no ar
