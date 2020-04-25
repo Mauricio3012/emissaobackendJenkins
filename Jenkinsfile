@@ -11,7 +11,7 @@ pipeline {
          }
       }
 	  
-	  stage('reports') {
+	  stage('Gerando Relatórios') {
 		 steps {
 			script {
             allure([
