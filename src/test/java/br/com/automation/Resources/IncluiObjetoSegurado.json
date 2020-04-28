@@ -10,7 +10,7 @@
                 "vlImportanciaSegurada": 10000
             }
         ],
-        "objeto": {
+         "objeto":{
             "obLogradouro": {
                 "nrPergunta": "2",
                 "inObrigatorio": true,
@@ -22,7 +22,7 @@
             "obCep": {
                 "nrPergunta": "1",
                 "inObrigatorio": true,
-                "nmResposta": "04726220",
+                "nmResposta": "04635010",
                 "nmPergunta": "CEP",
                 "nmPropriedade": "obCEP",
                 "nmTipo": "string"
@@ -51,7 +51,7 @@
                 "nmPropriedade": "obUf",
                 "nmTipo": "string"
             },
-            "obCodigoMunicipioIBGE": {
+            "obCodigoMunicipioIbge": {
                 "nrPergunta": "9",
                 "inObrigatorio": true,
                 "nmResposta": "211",
@@ -83,14 +83,14 @@
                 "nmPropriedade": "obMunicipio",
                 "nmTipo": "string"
             },
-            "obTipodeImovel":{
+            "obTipoDeImovel":{
             	"nmPergunta": "Qual o tipo de imóvel?",
                     "nmPropriedade": "obTipodeImovel",
-                    "nmResposta": "casa",
+                    "nmResposta": "Casa",
                     "nmTipo": "Seleção única",
                     "nrPergunta": 1
             },
-            "obTipodeUtilizacao":{
+            "obTipoDeUtilizacao":{
             "nmPergunta": "Qual utilização do imóvel?",
                     "nmPropriedade": "obTipodeUtilizacao",
                     "nmResposta": "Lazer",
