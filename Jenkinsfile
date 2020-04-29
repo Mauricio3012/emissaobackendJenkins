@@ -36,6 +36,20 @@ pipeline {
 
       }
       
+      	  stage('Gerando Relatorios Gitlab') {
+		 steps {
+			script {
+            allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'target/allure-results']]
+            ])
+    }
+    }
+}
+      
            stage('Testes Emissao Front-End') {
          steps {
             dir('testes_front') {
