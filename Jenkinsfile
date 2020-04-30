@@ -30,7 +30,7 @@ pipeline {
                     jdk: '',
                     properties: [],
                     reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'testes_backend/target/allure-results']], [path: 'testes_backend/target/allure-results']]
+                    results: [[path: 'testes_backend/target/allure-results'], [path: 'testes_backend/target/allure-results']]
             ])
     }
     }
