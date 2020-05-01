@@ -22,20 +22,6 @@ pipeline {
 
       }
       
-      	  stage('Gerando Relatorios') {
-		 steps {
-			script {
-            allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'testes_backend/target/allure-results'], [path: 'testes_backend/target/allure-results']]
-            ])
-    }
-    }
-}
-      
            stage('Testes Emissao Front-End') {
          steps {
             dir('testes_front_emissao') {
@@ -46,6 +32,20 @@ pipeline {
          }
 
       }
+      
+         	  stage('Gerando Relatorios') {
+		 steps {
+			script {
+            allure([
+                    includeProperties: false,
+                    jdk: '',
+                    properties: [],
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'testes_backend/target/allure-results'], [path: 'testes_backend/target/allure-results'], [path: 'testes_front_emissao/target/allure-results']]
+            ])
+    }
+    }
+}
  
    }
 }
