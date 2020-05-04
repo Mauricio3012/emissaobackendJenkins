@@ -12,7 +12,12 @@ import br.com.automation.Utils.ExtentManager;
 import br.com.automation.Utils.Utils;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Step;
 
+
+@Epic("Testes da Cotação-Backend")
 @SuppressWarnings("deprecation")
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/br/com/automation/features/",glue = {""},plugin = { "de.monochromata.cucumber.report.PrettyReports:target/cucumber" }, tags = {
