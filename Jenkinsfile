@@ -33,9 +33,12 @@ pipeline {
 
       }
       
-         	  stage('Gerando Relatorios') {
-		 steps {
-			script {
+         	 
+   }
+   
+     post {
+        always {
+            script {
             allure([
                     includeProperties: false,
                     jdk: '',
@@ -44,8 +47,6 @@ pipeline {
                     results: [[path: 'testes_backend/target/allure-results'], [path: 'testes_backend/target/allure-results'], [path: 'testes_front_emissao/target/allure-results']]
             ])
     }
+        }
     }
-}
- 
-   }
 }
