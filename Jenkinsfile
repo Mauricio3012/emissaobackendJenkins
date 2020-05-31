@@ -24,8 +24,7 @@ pipeline {
       
        stage('Testes de Performance') {
          steps {
-            bat "C:\Users\moliveij\Desktop\jmeter\bin\jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t C:\Users\moliveij\Desktop\jmeter\bin\grid.jmx -l C:\Users\moliveij\Desktop\jmeter\bin\TestResultadoMauricioReport22.jtl"
-         }
+            build job: 'teste_carga'
       }
       
          	 
