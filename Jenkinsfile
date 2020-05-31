@@ -11,7 +11,7 @@ pipeline {
          }
       }
 	  
-           stage('Testes Emissao Front-End') {
+           stage('Testes Funcionais') {
          steps {
             dir('testes_front_emissao') {
 
