@@ -24,7 +24,8 @@ pipeline {
       
        stage('Testes de Performance') {
          steps {
-            build job: 'teste_carga'
+         build job: 'teste_carga'
+         }
       }
       
          	 
