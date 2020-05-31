@@ -11,17 +11,6 @@ pipeline {
          }
       }
 	  
-     stage('Testes Emissao Back-End') {
-         steps {
-            dir('testes_backend') {
-
-            git credentialsId: '53ffb4e5-180d-419b-beba-692c3dccb2b4', url: 'https://gitlab.srv-cld.brasilseg.com.br/automacao-ultron/emissao/automacao_emissao_back-end'
-            bat "mvn test"
-         }
-         }
-
-      }
-      
            stage('Testes Emissao Front-End') {
          steps {
             dir('testes_front_emissao') {
@@ -31,6 +20,12 @@ pipeline {
          }
          }
 
+      }
+      
+       stage('Testes de Performance') {
+         steps {
+            bat "C:\Users\moliveij\Desktop\jmeter\bin\jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t C:\Users\moliveij\Desktop\jmeter\bin\grid.jmx -l C:\Users\moliveij\Desktop\jmeter\bin\TestResultadoMauricioReport22.jtl"
+         }
       }
       
          	 

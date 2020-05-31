@@ -14,7 +14,7 @@
             "obLogradouro": {
                 "nrPergunta": "2",
                 "inObrigatorio": true,
-                "nmResposta": "Rua Luiz correia de melo",
+                "nmResposta": "Rua Canario",
                 "nmPergunta": "Logradouro",
                 "nmPropriedade": "obLogradouro",
                 "nmTipo": "string"
@@ -22,7 +22,7 @@
             "obCep": {
                 "nrPergunta": "1",
                 "inObrigatorio": true,
-                "nmResposta": "04635010",
+                "nmResposta": "04521000",
                 "nmPergunta": "CEP",
                 "nmPropriedade": "obCEP",
                 "nmTipo": "string"
@@ -38,7 +38,7 @@
             "obBairro": {
                 "nrPergunta": "5",
                 "inObrigatorio": true,
-                "nmResposta": "Vila Cruzeiro",
+                "nmResposta": "Moema",
                 "nmPergunta": "Bairro",
                 "nmPropriedade": "obBairro",
                 "nmTipo": "string"
