@@ -1,0 +1,34 @@
+
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "dc687041-966f-4cde-b5b0-17f799e027eb"
+}
+
+Status code: 200
+Response time: 12794
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200601000018,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "e5a488e6-a411-11ea-b91b-0242ac110004",
+                "nmNumeroProposta": "2020060100001801"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
