@@ -43,7 +43,6 @@ pipeline {
             ])
             perfReport filterRegex: '', sourceDataFiles: 'C:\\Users\\moliveij\\Desktop\\jmeter\\bin\\TestResultadoMauricioReport22.jtl'
             
-    }
         }
     }
    
