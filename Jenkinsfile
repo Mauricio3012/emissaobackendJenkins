@@ -41,7 +41,7 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results'], [path: 'testes_front_emissao/target/allure-results']]
             ])
-            perfReport filterRegex: '', sourceDataFiles: 'C:\\Users\\moliveij\\Desktop\\jmeter\\bin\\TestResultadoMauricioReport22.jtl'
+            perfReport filterRegex: '', sourceDataFiles: 'C:\\Users\\moliveij\\Desktop\\jmeter\\bin\\TestResultadoCotacao.jtl'
             
         }
     }

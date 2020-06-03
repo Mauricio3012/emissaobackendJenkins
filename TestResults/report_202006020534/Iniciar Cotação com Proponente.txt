@@ -1,0 +1,3581 @@
+
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 1619
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:35:17.553180",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "fb5dd6fc-cf50-4858-9bd4-690f22158fe8",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6057342685684796212",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "5842299108019849884",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "5841239429090762017",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4899992285730413424",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000246,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "fb5dd6fc-cf50-4858-9bd4-690f22158fe8",
+        "nrCotacao": 20200602000246,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 2411
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:35:51.110606",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "6fe7e76c-72a0-44ee-aa38-2bc7b98df741",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6071226132880396496",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4635348885516748259",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4616493446962060590",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "6126320752988160027",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000247,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "6fe7e76c-72a0-44ee-aa38-2bc7b98df741",
+        "nrCotacao": 20200602000247,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 2221
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:36:29.045446",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "109b5b0a-223b-46ef-b211-19a74337699b",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "4635418244693873891",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4703240500817282024",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4922715889614823107",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4900005545915237020",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000248,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "109b5b0a-223b-46ef-b211-19a74337699b",
+        "nrCotacao": 20200602000248,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 2266
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:37:07.660396",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "65533f58-887f-43b2-b152-e0e3b39b9936",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "4689377786477005279",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4635331021895553749",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "5783766516141637781",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "6075379079630591937",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000250,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "65533f58-887f-43b2-b152-e0e3b39b9936",
+        "nrCotacao": 20200602000250,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 14990
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:38:57.080303",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "24f4921b-e32b-4667-b424-8322ef4f357a",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6126039057240737911",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4611687396042577903",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4994778225507681658",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "6147484153177883993",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000251,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "24f4921b-e32b-4667-b424-8322ef4f357a",
+        "nrCotacao": 20200602000251,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 2530
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:41:36.349408",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "573e285c-a7ff-4a16-b912-007140a094b2",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6053136987215552455",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "6130895551467012435",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4630902482122866926",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4977902902016050909",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000252,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "573e285c-a7ff-4a16-b912-007140a094b2",
+        "nrCotacao": 20200602000252,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 15812
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:42:59.469854",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "dd150ea7-d4e6-442c-b0bb-f923c97611c3",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "4923846170340941633",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4631201344058021934",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "5854978876031877626",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4707463676049918409",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000253,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "dd150ea7-d4e6-442c-b0bb-f923c97611c3",
+        "nrCotacao": 20200602000253,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 11182
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:45:06.394627",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "d59e0758-2742-4d6a-8eb1-2e32d4694230",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6053119742763064297",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "6072070902505722013",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "5764912386615842022",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4630058056294631404",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000254,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "d59e0758-2742-4d6a-8eb1-2e32d4694230",
+        "nrCotacao": 20200602000254,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 2473
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:47:19.431609",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "c6f2db4d-8231-4d0d-b1a0-be413aa97502",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "6075707766447459194",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "6075379078202377888",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "6075377975978809885",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "6057430859327701178",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000255,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "c6f2db4d-8231-4d0d-b1a0-be413aa97502",
+        "nrCotacao": 20200602000255,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Dwayne Johnson",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Dwayne Johnson",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 15404
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-02 20:49:05.906746",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "dcca6021-111e-4e90-b319-9084be21fe47",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "5769467708456080123",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "5855810095103641313",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4635612766276786196",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Dwayne Johnson",
+                            "nmDdd": "11",
+                            "nmIdentificador": "4707392253557180595",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Dwayne Johnson",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200602000256,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "dcca6021-111e-4e90-b319-9084be21fe47",
+        "nrCotacao": 20200602000256,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}

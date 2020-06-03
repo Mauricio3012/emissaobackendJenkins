@@ -1,0 +1,298 @@
+
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "fb5dd6fc-cf50-4858-9bd4-690f22158fe8"
+}
+
+Status code: 200
+Response time: 11603
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000246,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "9fbf29bc-a510-11ea-8ff1-0242ac110011",
+                "nmNumeroProposta": "2020060200024601"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "6fe7e76c-72a0-44ee-aa38-2bc7b98df741"
+}
+
+Status code: 200
+Response time: 9334
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000247,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "b7000b6e-a510-11ea-89ad-0242ac110011",
+                "nmNumeroProposta": "2020060200024701"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "109b5b0a-223b-46ef-b211-19a74337699b"
+}
+
+Status code: 200
+Response time: 10126
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000248,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "ceab9ab2-a510-11ea-81c2-0242ac110011",
+                "nmNumeroProposta": "2020060200024801"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "65533f58-887f-43b2-b152-e0e3b39b9936"
+}
+
+Status code: 200
+Response time: 20280
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000250,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "0d6a884e-a511-11ea-89ad-0242ac110011",
+                "nmNumeroProposta": "2020060200025001"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "24f4921b-e32b-4667-b424-8322ef4f357a"
+}
+
+Status code: 200
+Response time: 36533
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000251,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "None",
+                "nmNumeroProposta": "2020060200025101"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "573e285c-a7ff-4a16-b912-007140a094b2"
+}
+
+Status code: 200
+Response time: 13542
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000252,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "9e237f58-a511-11ea-b0c6-0242ac110011",
+                "nmNumeroProposta": "2020060200025201"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "dd150ea7-d4e6-442c-b0bb-f923c97611c3"
+}
+
+Status code: 200
+Response time: 15596
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000253,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "e5cc49b6-a511-11ea-9dca-0242ac110011",
+                "nmNumeroProposta": "2020060200025301"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "d59e0758-2742-4d6a-8eb1-2e32d4694230"
+}
+
+Status code: 200
+Response time: 6481
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000254,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "3ae88e64-a512-11ea-9dca-0242ac110011",
+                "nmNumeroProposta": "2020060200025401"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
+
+Grava Contrato
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "c6f2db4d-8231-4d0d-b1a0-be413aa97502"
+}
+
+Status code: 200
+Response time: 18241
+
+O Response é: 
+
+{
+    "dados": {
+        "nrContrato": 20200602000255,
+        "nrVersao": 1,
+        "propostas": [
+            {
+                "nmIdentificadorPdf": "74e514ca-a512-11ea-9dca-0242ac110011",
+                "nmNumeroProposta": "2020060200025501"
+            }
+        ]
+    },
+    "message": "Cotação contrada com sucesso",
+    "resource": "contrato",
+    "status": 200
+}
