@@ -62,6 +62,7 @@ public class EmissaoPage {
 	public static String pegaResponse = null;
 	public static String url = null;
 	public static String nomeAPI = "";
+	public static String url_VALOR = "";
 	public static String identificadorObjetoSegurado = "";
 	public static String idBeneficiario = "";
 	public static String tpBeneficiario = "";
@@ -76,6 +77,7 @@ public class EmissaoPage {
 	public static String tokenCapturado = "";
 	public static String localizadorCotacaoCapturado = "";
 	public static String nmIdSessao = "";
+	public static String nmIdSessaoHML = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU3MEb1MjYvOxwiaYO{Ijoh`IR0cIL7Ly9ibFlnYYS2YXkt[FV2LVOrZC5hblFzaVy{ZWctX39tLlKxIiwhX39nblm1bzpobl91cILhOlshS1VSQTSQUl9PTj9UT1OQTE8hYRwidYOmcm5icVUiOhK{aW5qb2RybxK8.L8yiQuaSeh9x0S3[oviig[6BldUkJ2ywWUF8Uf,gYVI";
 	public static String nmIdTransacao = "";
 	public static String numeroProposta = "";
 	public static String listinha5;
@@ -92,77 +94,86 @@ public class EmissaoPage {
 		nomeAPI = url;
 //		RestAssured.baseURI = "";
 
-		switch (url) {
+		if(url.contains("HML")) {
+			url_VALOR = "https://apigateway.hml-cld.brasilseg.com.br/";
+		}else {
+			url_VALOR = "https://apigateway2.dev-cld.brasilseg.com.br/";
+		}
+	
+		String urlValidada = url.replace(" HML", "");
+		
+		
+		switch (urlValidada) {
 		case "Gerar Token":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/login";
+			RestAssured.baseURI = url_VALOR + "login";
 			requestspecs.contentType("application/json");
 			break;
 
 		case "Consulta por Proponente":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/consulta/proponente";
+			RestAssured.baseURI = url_VALOR + "api/emissao/consulta/proponente";
 			requestspecs.param("nmCpfCnpj", "38995063831");
 			break;
 
 		case "Consulta por Contrato":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/consulta/contrato";
+			RestAssured.baseURI = url_VALOR + "api/emissao/consulta/contrato";
 			requestspecs.param("nrProposta", "2019101000000003001");
 			requestspecs.param("nrVersaoContrato", "1");
 			requestspecs.param("nrContrato", "2019101000000003");
 			break;
 
 		case "Consulta por Proposta":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/consulta/proposta";
+			RestAssured.baseURI = url_VALOR + "api/emissao/consulta/proposta";
 			requestspecs.param("nrProposta", "2019101000000003001");
 			break;
 
 		case "Consulta por Apólice":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/consulta/apolice";
+			RestAssured.baseURI = url_VALOR + "api/emissao/consulta/apolice";
 			requestspecs.param("nrApolice", "20191222000000007");
 			break;
 
 		// Vigência
 		case "Retornar a Vigência":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/vigencia/"
 					+ cotacaoPage.nrLocalizer + "/10000";
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			break;
 
 		case "Retornar a Vigência Novamente":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/vigencia/"
 					+ cotacaoPage.nrLocalizer + "/10000";
 			break;
 
 		case "Registrar a Vigência":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/vigencia";
 			requestspecs.contentType("application/json");
 			break;
 
 		// Periodicidade
 		case "Retornar a Periodicidade":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/periodicidade/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/periodicidade/"
 					+ cotacaoPage.nrLocalizer + "/10000";
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			break;
 
 		case "Retornar a Periodicidade Novamente":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/periodicidade/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/periodicidade/"
 					+ cotacaoPage.nrLocalizer + "/10000";
 			break;
 
 		case "Registrar a Periodicidade":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/periodicidade";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/periodicidade";
 			requestspecs.contentType("application/json");
 			break;
 
 		// Histórico do Cliente
 		case "Retornar a Consulta de Historico":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/historico/38995063831";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/historico/38995063831";
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			break;
 
 		// Beneficiário
 		case "Beneficiário":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/beneficiario";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/beneficiario";
 //			if ((tpBeneficiario.equals(""))) {
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			requestspecs.contentType("application/json");
@@ -174,7 +185,7 @@ public class EmissaoPage {
 
 		// Consultar Cotação
 		case "Consultar Cotação":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao";
 //			if (!(CotacaoPage.Cenario.equals("Beneficiário"))) {
 			requestspecs.param("nrLocalizador", cotacaoPage.nrLocalizer);
 //			}
@@ -182,14 +193,14 @@ public class EmissaoPage {
 
 		// Copiar Endereço
 		case "Copiar Endereço":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado/endereco";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/objetosegurado/endereco";
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			requestspecs.contentType("application/json");
 			break;
 
 		// Filtrar Endereço
 		case "Filtrar Endereço":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado/endereco";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/objetosegurado/endereco";
 			requestspecs.param("nrLocalizador", cotacaoPage.nrLocalizer);
 			requestspecs.header("Authorization", cotacaoPage.nrToken);
 			requestspecs.contentType("application/json");
@@ -197,144 +208,148 @@ public class EmissaoPage {
 
 		// Emitir Cotação
 		case "Emitir Cotação":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/contrato/gerar_contrato";
+			RestAssured.baseURI = url_VALOR + "api/emissao/contrato/gerar_contrato";
 			requestspecs.param("nrApolice", "");
 			break;
 
 		// Grupo Ramo
 		case "Grupo Ramo":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/grupoRamo";
+			RestAssured.baseURI = url_VALOR + "api/produto/grupoRamo";
 			requestspecs.contentType("application/json");
 			break;
 
 		// Chassi
 		case "Chassi":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/chassi";
+			RestAssured.baseURI = url_VALOR + "api/produto/chassi";
 			requestspecs.contentType("application/json");
 			break;
 
 		// Cobertura Incêndio
 		case "Cobertura Incêndio":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/cobertura";
+			RestAssured.baseURI = url_VALOR + "api/produto/cobertura";
 			requestspecs.contentType("application/json");
 			break;
 
 		case "Cobertural Vendeval":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/cobertura";
+			RestAssured.baseURI = url_VALOR + "api/produto/cobertura";
 			requestspecs.contentType("application/json");
 			break;
 
 		case "Cadastro Chassi Incêndio":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/chassiCobertura";
+			RestAssured.baseURI = url_VALOR + "api/produto/chassiCobertura";
 			requestspecs.contentType("application/json");
 			break;
 
 		case "Cadastro Chassi Vendaval":
-			RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/produto/chassiCobertura";
+			RestAssured.baseURI = url_VALOR + "api/produto/chassiCobertura";
 			requestspecs.contentType("application/json");
 			break;
 
 		// Fluxo Cotação
 		case "Iniciar Cotação":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			requestspecs.header("nmIdTransacao", nmIdTransacao);
 			break;
 
 		case "Iniciar Cotação com Proponente":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao";
+			if(url.contains("HML")) {
+			requestspecs.header("nmIdSessao", nmIdSessaoHML);
+			}else {
 			requestspecs.header("nmIdSessao", nmIdSessao);
+			}
 			break;
 
 		case "Consulta GrupoRamo":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/grupo-ramo";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/grupo-ramo";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Consulta Oferta":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/oferta";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/oferta";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Selecionar Oferta":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/oferta";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/oferta";
 			break;
 
 		case "Consulta Plano":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/plano/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/plano/"
 					+ localizadorCotacaoCapturado + "/20000/1";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Plano":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/plano";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/plano";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Vigência":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/vigencia";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Consulta Pessoa":
 			String cpfFinal = geraCPF();
 
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/pessoa/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/pessoa/"
 					+ localizadorCotacaoCapturado + "/" + cpfFinal;
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Pessoa":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/pessoa";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/pessoa";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Consulta CEP":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/cep/04521000";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/cep/04521000";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Endereço":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/endereco";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/endereco";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Email":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/email";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/email";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Grava Telefone":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/telefone";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/telefone";
 //			requestspecs.header("Authorization", tokenCapturado);
 			break;
 
 		case "Incluir Objeto Segurado":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/objetosegurado";
 			break;
 
 		case "Grava Periodicidade de Contratação":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/vigencia";
 			break;
 
 		case "Grava Contrato":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/contrato";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/contrato";
 			break;
 
 		case "Selecionar Plano":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/plano";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/plano";
 			break;
 
 		case "Registrar De acordo":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/deacordo";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/deacordo";
 			break;
 
 		case "Selecionar Assistência":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/assistencia";
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/assistencia";
 			break;
 					
 		case "Gerar PDF":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao/pdf/"
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/pdf/"
 					+ localizadorCotacaoCapturado;
 //			requestspecs.header("Authorization", tokenCapturado);
 			requestspecs.contentType("application/pdf");
@@ -343,37 +358,37 @@ public class EmissaoPage {
 		// Configurador de regras
 
 		case "Momento":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/momento";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/momento";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Tipo de Seguro":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/tipoSeguro";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/tipoSeguro";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Referência":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/referencia";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/referencia";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Operação":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/operacao";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/operacao";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Ação":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/acao";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/acao";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Motivo de recusa":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/motivoRecusa";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/motivoRecusa";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
 		case "Classe da regra":
-			RestAssured.baseURI = "https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/regra/classeRegra";
+			RestAssured.baseURI = url_VALOR + "api/emissao/regra/classeRegra";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
 
@@ -426,10 +441,12 @@ public class EmissaoPage {
 
 	public void enviaPOSTArquivoJson(String cenario) {
 		try {
-
+			
+			String cenarioValidado = cenario.replace(" HML", "");
+			
 			File starting = new File(System.getProperty("user.dir"));
 
-			switch (cenario) {
+			switch (cenarioValidado) {
 			// Gerar Token
 			case "Gerar Token":
 				jsonBodyPost = generateStringFromResource(
@@ -559,34 +576,64 @@ public class EmissaoPage {
 				break;
 
 			case "Selecionar Oferta":
-				String jsonBodyPostSelecionarOferta = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionarOferta.json");
-				jsonBodyPost = jsonBodyPostSelecionarOferta
-						.replace("{\r\n" + "  \"nrLocalizador\": \"5ef1ab41-c9bd-4b65-8adb-5d0c68298c79\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
-						.trim();
+				if(cenario.contains("HML")) {				
+					String jsonBodyPostSelecionarOferta = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionarOfertaHML.json");
+					jsonBodyPost = jsonBodyPostSelecionarOferta
+							.replace("{\r\n" + "  \"nrLocalizador\": \"5ef1ab41-c9bd-4b65-8adb-5d0c68298c79\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}else {				
+					String jsonBodyPostSelecionarOferta = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionarOferta.json");
+					jsonBodyPost = jsonBodyPostSelecionarOferta
+							.replace("{\r\n" + "  \"nrLocalizador\": \"5ef1ab41-c9bd-4b65-8adb-5d0c68298c79\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}
 
 				break;
 
 			case "Incluir Objeto Segurado":
-				String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSegurado.json");
-				jsonBodyPost = jsonBodyPostGravaObjetoSegurado.replace(
-						"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
-								+ "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-						"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
-								+ localizadorCotacaoCapturado + "\"")
-						.trim();
-
+				if(cenario.contains("HML")) {				
+					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSeguradoHML.json");
+					jsonBodyPost = jsonBodyPostGravaObjetoSegurado.replace(
+							"\"nrChassi\": 10100,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
+									+ "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+							"\"nrChassi\": 10100,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
+									+ localizadorCotacaoCapturado + "\"")
+							.trim();
+				}else {				
+					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSegurado.json");
+					jsonBodyPost = jsonBodyPostGravaObjetoSegurado.replace(
+							"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
+									+ "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+							"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
+									+ localizadorCotacaoCapturado + "\"")
+							.trim();
+				}
+				
 				break;
 
 			case "Grava Periodicidade de Contratação":
-				String jsonBodyPostGravaPeriodicidade = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\InformaPeriodicidade.json");
-				jsonBodyPost = jsonBodyPostGravaPeriodicidade
-						.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
-						.trim();
+
+				if(cenario.contains("HML")) {				
+					String jsonBodyPostGravaPeriodicidade = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\InformaPeriodicidadeHML.json");
+					jsonBodyPost = jsonBodyPostGravaPeriodicidade
+							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}else {				
+					String jsonBodyPostGravaPeriodicidade = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\InformaPeriodicidade.json");
+					jsonBodyPost = jsonBodyPostGravaPeriodicidade
+							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}
 
 				break;
 
@@ -621,12 +668,12 @@ public class EmissaoPage {
 				break;
 
 			}
-
+			
 			restAssuredResponse = requestspecs.body(jsonBodyPost).post(RestAssured.baseURI);
 			System.out.println("LOG: Response retornado é: " + restAssuredResponse.asString());
 			jsonFinalTest = restAssuredResponse.asString();
 
-			if (nomeAPI.equals("Iniciar Cotação com Proponente")) {
+			if (nomeAPI.contains("Iniciar Cotação com Proponente")) {
 				capturaLocalizadorCotacao();
 			}
 
