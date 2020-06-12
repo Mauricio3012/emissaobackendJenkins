@@ -1,0 +1,29 @@
+
+
+Selecionar Assistência HML
+
+URL utilizada é: https://apigateway.hml-cld.brasilseg.com.br/api/emissao/cotacao/assistencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "547f1d93-3295-4ee8-b0f9-f7fed4941aee",
+  	"nrAssistencia": 17,
+	"nrChassi": 10001,
+	"nrVersaoChassi": 1
+}
+
+Status code: 400
+Response time: 1612
+
+O Response é: 
+
+{
+    "errors": [
+        
+    ],
+    "message": "Oferta sem chassi",
+    "resource": "Assistencia"
+}

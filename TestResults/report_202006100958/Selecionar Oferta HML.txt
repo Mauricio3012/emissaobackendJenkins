@@ -1,0 +1,27 @@
+
+
+Selecionar Oferta HML
+
+URL utilizada é: https://apigateway.hml-cld.brasilseg.com.br/api/emissao/cotacao/oferta
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null",
+  "nrOferta": 20200,
+  "nrOfertaVersao": 1
+}
+
+Status code: 500
+Response time: 1369
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-11T00:59:30.224+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "GENERAL"
+}

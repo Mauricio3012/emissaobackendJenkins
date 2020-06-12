@@ -1,0 +1,1918 @@
+
+
+Selecionar Oferta HML
+
+URL utilizada é: https://apigateway.hml-cld.brasilseg.com.br/api/emissao/cotacao/oferta
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "547f1d93-3295-4ee8-b0f9-f7fed4941aee",
+  "nrOferta": 20200,
+  "nrOfertaVersao": 1
+}
+
+Status code: 200
+Response time: 4811
+
+O Response é: 
+
+{
+    "dados": {
+        "canal": {
+            "nmCanal": "Banco do Brasil",
+            "nrCanal": 1
+        },
+        "dadosCobranca": {
+            
+        },
+        "dtAlteracao": "null",
+        "dtCotacao": "2020-06-11 12:41:30.043785",
+        "dtFimVigencia": "null",
+        "localizadorCotacao": "547f1d93-3295-4ee8-b0f9-f7fed4941aee",
+        "lsAlerta": [
+            
+        ],
+        "lsOferta": [
+            {
+                "inIsencaoIof": true,
+                "inPeriodicidadeUnificada": false,
+                "inSelecionado": true,
+                "lsChassi": [
+                    {
+                        "grupoRamo": {
+                            "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                            "nmNumeroGrupoRamo": "0114",
+                            "pcIof": "null"
+                        },
+                        "lsClausula": [
+                            {
+                                "nmArquivo": "eaad25fa-51c3-11ea-8f2b-0242ac110003",
+                                "nmDescricao": "COND. G. SEGURO COMPREENSIVO RESIDENCIAL",
+                                "nrClausula": 1,
+                                "nrVersaoClausula": 1
+                            }
+                        ],
+                        "lsCobertura": [
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": "null",
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": true,
+                                "inSelecionado": false,
+                                "inSemFranquia": true,
+                                "lsDependencia": [
+                                    
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Incêndio,  Idt, Raio e Explosão",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 1,
+                                "vlMaxImportanciaSegurada": 1000000.0,
+                                "vlMinImportanciaSegurada": 100000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "5782710986007022552",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Vendaval, Furacão, Ciclone, Tornado e Granizo",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 2,
+                                "vlMaxImportanciaSegurada": 250000.0,
+                                "vlMinImportanciaSegurada": 5000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "6071979658807648113",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Despesas emergenciais",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 3,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "5836952094883681866",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Danos elétricos ",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 4,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 5000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "6126396331445361753",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Responsabilidade civil familiar",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 5,
+                                "vlMaxImportanciaSegurada": 250000.0,
+                                "vlMinImportanciaSegurada": 10000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "6071995809668252515",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Quebra de vidros ",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 6,
+                                "vlMaxImportanciaSegurada": 25000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "6075726801262009871",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Tumultos, Greves e lock-out",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 7,
+                                "vlMaxImportanciaSegurada": 500000.0,
+                                "vlMinImportanciaSegurada": 5000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4706350946278217499",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Desmoronamento",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 8,
+                                "vlMaxImportanciaSegurada": 300000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4899991231177541243",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Roubo e/ou furto qualificado",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 9,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 5000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": "null",
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": true,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Perda ou pagamento de aluguel",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 11,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4688340672729239862",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 3
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Impacto de Veículos Terrestres ou queda de aeronave",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 12,
+                                "vlMaxImportanciaSegurada": 250000.0,
+                                "vlMinImportanciaSegurada": 50000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": "null",
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": true,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Roubo e/ou furto qualificado praticado por empregados",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 13,
+                                "vlMaxImportanciaSegurada": 150000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": "null",
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": true,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Subtração de bicicleta",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 14,
+                                "vlMaxImportanciaSegurada": 30000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": "null",
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": true,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Equipamentos (semi) portáteis",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 15,
+                                "vlMaxImportanciaSegurada": 15000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4702907282091855851",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Danos por água",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 16,
+                                "vlMaxImportanciaSegurada": 5000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4976571392222140970",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Rompimento de tubulação",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 17,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4684044072367594815",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Alagamento",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 18,
+                                "vlMaxImportanciaSegurada": 50000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4612042624553752473",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Desocupação temporária imóvel",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 19,
+                                "vlMaxImportanciaSegurada": 100000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4635423740921413852",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Pagamento de franquia para seguro de automóvel",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 20,
+                                "vlMaxImportanciaSegurada": 10000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "5769134215956847484",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Responsabilidade civil empregados",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 21,
+                                "vlMaxImportanciaSegurada": 250000.0,
+                                "vlMinImportanciaSegurada": 10000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "4994492004507238562",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Obras de arte",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 22,
+                                "vlMaxImportanciaSegurada": 100000.0,
+                                "vlMinImportanciaSegurada": 1000.0,
+                                "vlPremioMinimo": 0.0
+                            },
+                            {
+                                "carencia": "null",
+                                "clausula": {
+                                    
+                                },
+                                "franquia": {
+                                    "lsParametroFranquia": [
+                                        {
+                                            "nmIdentificador": "6147696414454812509",
+                                            "nrTipoModalidadeFranquia": 1,
+                                            "pcFranquia": 10.0,
+                                            "vlMinimoFranquia": 150.0
+                                        }
+                                    ],
+                                    "nrTipoFranquia": 1
+                                },
+                                "grupoRamo": {
+                                    "nmGrupoRamo": "Patrimonial – Compreensivo Residencial",
+                                    "nmNumeroGrupoRamo": "0114",
+                                    "pcIof": 7.38
+                                },
+                                "inCoberturaBasica": false,
+                                "inSelecionado": false,
+                                "inSemFranquia": false,
+                                "lsDependencia": [
+                                    {
+                                        "nrCoberturaDependente": 1,
+                                        "pcMaxImportanciaSegurada": 100.0,
+                                        "tipoDependencia": {
+                                            "nmDependencia": "Cobertura Básica",
+                                            "nrTipoDependencia": 3
+                                        }
+                                    }
+                                ],
+                                "lsQuestionario": "null",
+                                "nmCobertura": "Danos ao jardim",
+                                "nmDescricao": "descrição teste de uma cobertura",
+                                "nmProcessoSusep": "15414.000532/2005-75",
+                                "nrCobertura": 23,
+                                "vlMaxImportanciaSegurada": 500000.0,
+                                "vlMinImportanciaSegurada": 5000.0,
+                                "vlPremioMinimo": 0.0
+                            }
+                        ],
+                        "lsDespesaComercial": [
+                            
+                        ],
+                        "lsPacoteAssistencia": [
+                            {
+                                "inObrigatoriedade": false,
+                                "inSelecionado": false,
+                                "lsAssistencia": [
+                                    {
+                                        "nmAssistencia": "Chaveiro (qualquer causa)",
+                                        "nmDescricao": "Até R$ 250",
+                                        "nrAssistencia": 164
+                                    },
+                                    {
+                                        "nmAssistencia": "Eletricista (qualquer causa)",
+                                        "nmDescricao": "Até R$ 250",
+                                        "nrAssistencia": 165
+                                    },
+                                    {
+                                        "nmAssistencia": "Encanador (qualquer causa)",
+                                        "nmDescricao": "Até R$ 250",
+                                        "nrAssistencia": 166
+                                    },
+                                    {
+                                        "nmAssistencia": "Limpeza após Sinistro",
+                                        "nmDescricao": "Até R$ 150",
+                                        "nrAssistencia": 167
+                                    },
+                                    {
+                                        "nmAssistencia": "Desentupimento",
+                                        "nmDescricao": "Até R$ 250",
+                                        "nrAssistencia": 79
+                                    },
+                                    {
+                                        "nmAssistencia": "Cobertura Provisória de Telhado",
+                                        "nmDescricao": "Até R$ 250",
+                                        "nrAssistencia": 80
+                                    }
+                                ],
+                                "nmIdentificador": "4689443571962055943",
+                                "nmPacoteAssistencia": "PACOTE EMERGENCIAL",
+                                "nrPacoteAssistencia": 1,
+                                "vlPacoteAssistencia": 7.32
+                            },
+                            {
+                                "inObrigatoriedade": false,
+                                "inSelecionado": false,
+                                "lsAssistencia": [
+                                    {
+                                        "nmAssistencia": "Conserto Eletrodomésticos",
+                                        "nmDescricao": "Conserto Eletrodomésticos até R$ 350: Fogão, forno e Cooktop, geladeira, freezer, frigobar, adega, microondas, lava-roupa e seca-roupa, lava-louça, exaustor e coifa",
+                                        "nrAssistencia": 168
+                                    },
+                                    {
+                                        "nmAssistencia": "Conserto de ar condicionado",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 169
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação e Conversão de Fogão",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 90
+                                    },
+                                    {
+                                        "nmAssistencia": "Conserto de Televisão",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 170
+                                    }
+                                ],
+                                "nmIdentificador": "4923560575119704844",
+                                "nmPacoteAssistencia": "PACOTE CONVENIÊNCIA",
+                                "nrPacoteAssistencia": 2,
+                                "vlPacoteAssistencia": 8.2
+                            },
+                            {
+                                "inObrigatoriedade": false,
+                                "inSelecionado": false,
+                                "lsAssistencia": [
+                                    {
+                                        "nmAssistencia": "Montagem de Móveis",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 177
+                                    },
+                                    {
+                                        "nmAssistencia": "Descarte Sustentável",
+                                        "nmDescricao": "Até 3 itens",
+                                        "nrAssistencia": 178
+                                    },
+                                    {
+                                        "nmAssistencia": "Personal Organizer",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 179
+                                    },
+                                    {
+                                        "nmAssistencia": "Substituição Lâmpadas e Reatores",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 171
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação Lustres e Spots",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 91
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação Antena",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 172
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação Pias, Cubas e Tanques",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 173
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação Ventilador",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 174
+                                    },
+                                    {
+                                        "nmAssistencia": "Instalação Cortinas",
+                                        "nmDescricao": "Até R$ 200",
+                                        "nrAssistencia": 175
+                                    },
+                                    {
+                                        "nmAssistencia": "Fixações em Geral",
+                                        "nmDescricao": "Até R$ 300",
+                                        "nrAssistencia": 176
+                                    }
+                                ],
+                                "nmIdentificador": "6058467489661767430",
+                                "nmPacoteAssistencia": "PACOTE MANUTENÇÂO",
+                                "nrPacoteAssistencia": 3,
+                                "vlPacoteAssistencia": 16.0
+                            },
+                            {
+                                "inObrigatoriedade": false,
+                                "inSelecionado": false,
+                                "lsAssistencia": [
+                                    {
+                                        "nmAssistencia": "Limpeza de Ar Condicionado",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 97
+                                    },
+                                    {
+                                        "nmAssistencia": "Limpeza de Caixa D’Água e Placa Solar",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 98
+                                    },
+                                    {
+                                        "nmAssistencia": "Caçamba",
+                                        "nmDescricao": "Até R$ 500",
+                                        "nrAssistencia": 99
+                                    },
+                                    {
+                                        "nmAssistencia": "Limpeza de Ralos, Sifões e Caixa de Gordura",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 180
+                                    },
+                                    {
+                                        "nmAssistencia": "Limpeza de Calha",
+                                        "nmDescricao": "Até R$ 350",
+                                        "nrAssistencia": 95
+                                    }
+                                ],
+                                "nmIdentificador": "4919131756188828681",
+                                "nmPacoteAssistencia": "PACOTE SEGURANÇA",
+                                "nrPacoteAssistencia": 4,
+                                "vlPacoteAssistencia": 22.1
+                            }
+                        ],
+                        "lsQuestionario": [
+                            {
+                                "lsPergunta": [
+                                    
+                                ],
+                                "nmIdentificador": "4922716970041971120",
+                                "nmQuestionario": "368bfb0a-bd93-4389-bcd1-21d7eb8528d7",
+                                "nrVersao": 1
+                            },
+                            {
+                                "lsPergunta": [
+                                    
+                                ],
+                                "nmIdentificador": "4685240070220335359",
+                                "nmQuestionario": "ca5f6ec6-acde-4047-abe4-35130c2097c0",
+                                "nrVersao": 1
+                            }
+                        ],
+                        "lsTags": [
+                            
+                        ],
+                        "lsTipoContratacao": [
+                            {
+                                "nmIdentificador": "4684941344898123250",
+                                "nmTipoContratacao": "Nova",
+                                "nrTipoContratacao": 1,
+                                "txTipoContratacao": "Nova Contratação"
+                            },
+                            {
+                                "nmIdentificador": "5842295716637040519",
+                                "nmTipoContratacao": "Congênere",
+                                "nrTipoContratacao": 2,
+                                "txTipoContratacao": "Contratação Congênere"
+                            },
+                            {
+                                "nmIdentificador": "5766014991629735491",
+                                "nmTipoContratacao": "Interna",
+                                "nrTipoContratacao": 3,
+                                "txTipoContratacao": "Contratação Interna"
+                            }
+                        ],
+                        "nmChassi": "Residencial Básico",
+                        "nmIdentificador": "5788252612483664773",
+                        "nmProcessoSusep": "15414.000532/2005-75",
+                        "nrChassi": 10100,
+                        "nrPrazoRecusaProposta": "null",
+                        "nrSeguradora": "6785",
+                        "nrValidadeCotacao": 30,
+                        "nrVersaoChassi": 1,
+                        "periodicidadeContratacao": {
+                            "periodicidade": {
+                                "nmPeriodicidade": "Anual",
+                                "nrPeriodicidade": 9
+                            },
+                            "qtMaxPeriodicidade": 5,
+                            "qtMinPeriodicidade": 1
+                        },
+                        "tipoEmissao": {
+                            "nmTipoEmissao": "Apólice",
+                            "nrTipoEmissao": 1,
+                            "txDescricao": "Toda contratação efetivada gerará uma Apólice."
+                        },
+                        "txDescricao": "Residencial comercializado no legado (SEGBR)",
+                        "vlLimiteTecnico": 520.0
+                    }
+                ],
+                "lsObjetoSegurado": [
+                    
+                ],
+                "lsPlano": [
+                    {
+                        "inSelecionado": false,
+                        "lsChassi": [
+                            {
+                                "lsCobertura": [
+                                    {
+                                        "nrCobertura": 1,
+                                        "nrCoberturaRelativa": 45,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 2,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 4,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 9,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 12,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    }
+                                ],
+                                "lsPacoteAssistencia": [
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 164
+                                            },
+                                            {
+                                                "nrAssistencia": 165
+                                            },
+                                            {
+                                                "nrAssistencia": 166
+                                            },
+                                            {
+                                                "nrAssistencia": 167
+                                            },
+                                            {
+                                                "nrAssistencia": 79
+                                            },
+                                            {
+                                                "nrAssistencia": 80
+                                            }
+                                        ],
+                                        "nmIdentificador": "4611775359597009254",
+                                        "nrPacoteAssistencia": 1
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 168
+                                            },
+                                            {
+                                                "nrAssistencia": 169
+                                            },
+                                            {
+                                                "nrAssistencia": 90
+                                            },
+                                            {
+                                                "nrAssistencia": 170
+                                            }
+                                        ],
+                                        "nmIdentificador": "5770607565422632304",
+                                        "nrPacoteAssistencia": 2
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 177
+                                            },
+                                            {
+                                                "nrAssistencia": 178
+                                            },
+                                            {
+                                                "nrAssistencia": 179
+                                            },
+                                            {
+                                                "nrAssistencia": 171
+                                            },
+                                            {
+                                                "nrAssistencia": 91
+                                            },
+                                            {
+                                                "nrAssistencia": 172
+                                            },
+                                            {
+                                                "nrAssistencia": 173
+                                            },
+                                            {
+                                                "nrAssistencia": 174
+                                            },
+                                            {
+                                                "nrAssistencia": 175
+                                            },
+                                            {
+                                                "nrAssistencia": 176
+                                            }
+                                        ],
+                                        "nmIdentificador": "6052908275945361008",
+                                        "nrPacoteAssistencia": 3
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 97
+                                            },
+                                            {
+                                                "nrAssistencia": 98
+                                            },
+                                            {
+                                                "nrAssistencia": 99
+                                            },
+                                            {
+                                                "nrAssistencia": 180
+                                            },
+                                            {
+                                                "nrAssistencia": 95
+                                            }
+                                        ],
+                                        "nmIdentificador": "5769414932082118748",
+                                        "nrPacoteAssistencia": 4
+                                    }
+                                ],
+                                "nrChassi": 10100,
+                                "nrVersaoChassi": 1
+                            }
+                        ],
+                        "nmIdentificador": "4919057060303785530",
+                        "nmPlano": "Pleno",
+                        "nrPlano": 1,
+                        "vlComercial": 30.0
+                    },
+                    {
+                        "inSelecionado": false,
+                        "lsChassi": [
+                            {
+                                "lsCobertura": [
+                                    {
+                                        "nrCobertura": 1,
+                                        "nrCoberturaRelativa": 45,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 2,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 3,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 4,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 5,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 6,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 7,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 8,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 9,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 11,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 12,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 13,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 14,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 15,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 16,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 17,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 18,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 19,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 20,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 21,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 22,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    },
+                                    {
+                                        "nrCobertura": 23,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    }
+                                ],
+                                "lsPacoteAssistencia": [
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 164
+                                            },
+                                            {
+                                                "nrAssistencia": 165
+                                            },
+                                            {
+                                                "nrAssistencia": 166
+                                            },
+                                            {
+                                                "nrAssistencia": 167
+                                            },
+                                            {
+                                                "nrAssistencia": 79
+                                            },
+                                            {
+                                                "nrAssistencia": 80
+                                            }
+                                        ],
+                                        "nmIdentificador": "4991471908935212491",
+                                        "nrPacoteAssistencia": 1
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 168
+                                            },
+                                            {
+                                                "nrAssistencia": 169
+                                            },
+                                            {
+                                                "nrAssistencia": 90
+                                            },
+                                            {
+                                                "nrAssistencia": 170
+                                            }
+                                        ],
+                                        "nmIdentificador": "4706614628901093473",
+                                        "nrPacoteAssistencia": 2
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 177
+                                            },
+                                            {
+                                                "nrAssistencia": 178
+                                            },
+                                            {
+                                                "nrAssistencia": 179
+                                            },
+                                            {
+                                                "nrAssistencia": 171
+                                            },
+                                            {
+                                                "nrAssistencia": 91
+                                            },
+                                            {
+                                                "nrAssistencia": 172
+                                            },
+                                            {
+                                                "nrAssistencia": 173
+                                            },
+                                            {
+                                                "nrAssistencia": 174
+                                            },
+                                            {
+                                                "nrAssistencia": 175
+                                            },
+                                            {
+                                                "nrAssistencia": 176
+                                            }
+                                        ],
+                                        "nmIdentificador": "4635630383057247072",
+                                        "nrPacoteAssistencia": 3
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 97
+                                            },
+                                            {
+                                                "nrAssistencia": 98
+                                            },
+                                            {
+                                                "nrAssistencia": 99
+                                            },
+                                            {
+                                                "nrAssistencia": 180
+                                            },
+                                            {
+                                                "nrAssistencia": 95
+                                            }
+                                        ],
+                                        "nmIdentificador": "5764960539115029843",
+                                        "nrPacoteAssistencia": 4
+                                    }
+                                ],
+                                "nrChassi": 10100,
+                                "nrVersaoChassi": 1
+                            }
+                        ],
+                        "nmIdentificador": "6057645040181762297",
+                        "nmPlano": "Total",
+                        "nrPlano": 2,
+                        "vlComercial": 30.0
+                    },
+                    {
+                        "inSelecionado": false,
+                        "lsChassi": [
+                            {
+                                "lsCobertura": [
+                                    {
+                                        "nrCobertura": 1,
+                                        "nrCoberturaRelativa": 45,
+                                        "pcRelativaImportanciaSegurada": 15.0,
+                                        "vlImportanciaSegurada": 1500000.0
+                                    }
+                                ],
+                                "lsPacoteAssistencia": [
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 164
+                                            },
+                                            {
+                                                "nrAssistencia": 165
+                                            },
+                                            {
+                                                "nrAssistencia": 166
+                                            },
+                                            {
+                                                "nrAssistencia": 167
+                                            },
+                                            {
+                                                "nrAssistencia": 79
+                                            },
+                                            {
+                                                "nrAssistencia": 80
+                                            }
+                                        ],
+                                        "nmIdentificador": "5838166229558336401",
+                                        "nrPacoteAssistencia": 1
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 168
+                                            },
+                                            {
+                                                "nrAssistencia": 169
+                                            },
+                                            {
+                                                "nrAssistencia": 90
+                                            },
+                                            {
+                                                "nrAssistencia": 170
+                                            }
+                                        ],
+                                        "nmIdentificador": "6075708035402666372",
+                                        "nrPacoteAssistencia": 2
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 177
+                                            },
+                                            {
+                                                "nrAssistencia": 178
+                                            },
+                                            {
+                                                "nrAssistencia": 179
+                                            },
+                                            {
+                                                "nrAssistencia": 171
+                                            },
+                                            {
+                                                "nrAssistencia": 91
+                                            },
+                                            {
+                                                "nrAssistencia": 172
+                                            },
+                                            {
+                                                "nrAssistencia": 173
+                                            },
+                                            {
+                                                "nrAssistencia": 174
+                                            },
+                                            {
+                                                "nrAssistencia": 175
+                                            },
+                                            {
+                                                "nrAssistencia": 176
+                                            }
+                                        ],
+                                        "nmIdentificador": "6076857010305485972",
+                                        "nrPacoteAssistencia": 3
+                                    },
+                                    {
+                                        "inSelecionado": "null",
+                                        "lsAssistencia": [
+                                            {
+                                                "nrAssistencia": 97
+                                            },
+                                            {
+                                                "nrAssistencia": 98
+                                            },
+                                            {
+                                                "nrAssistencia": 99
+                                            },
+                                            {
+                                                "nrAssistencia": 180
+                                            },
+                                            {
+                                                "nrAssistencia": 95
+                                            }
+                                        ],
+                                        "nmIdentificador": "4612038143254495579",
+                                        "nrPacoteAssistencia": 4
+                                    }
+                                ],
+                                "nrChassi": 10100,
+                                "nrVersaoChassi": 1
+                            }
+                        ],
+                        "nmIdentificador": "4917935212919119324",
+                        "nmPlano": "Leve",
+                        "nrPlano": 9,
+                        "vlComercial": 20.0
+                    }
+                ],
+                "lsPlanoPagamento": [
+                    {
+                        "formaPagamento": {
+                            "nmFormaPagamento": "Débito em conta",
+                            "nrFormaPagamento": 1
+                        },
+                        "inSelecionado": false,
+                        "lsOpcaoPagamento": [
+                            {
+                                "nrParcelaFinal": 12,
+                                "nrParcelaInicial": 1,
+                                "pcAdicionalFracionamento": 0.5
+                            }
+                        ],
+                        "nmPlanoPagamento": "Plano Pagamento Retrofit",
+                        "nrConvenioDemais": 5,
+                        "nrConvenioPrimeira": 5,
+                        "nrPlanoPagamento": 1,
+                        "tipoPlanoPagamento": {
+                            "nmTipoPlanoPagamento": "Parcelamento",
+                            "nrTipoPlanoPagamento": 3
+                        }
+                    }
+                ],
+                "lsQuestionario": "null",
+                "lsTipoRenovacao": [
+                    {
+                        "nmIdentificador": "6144110922746396848",
+                        "nmTipoRenovacao": "Automática",
+                        "nrTipoRenovacao": 1
+                    },
+                    {
+                        "nmIdentificador": "5842595062341164040",
+                        "nmTipoRenovacao": "Sob Demanda",
+                        "nrTipoRenovacao": 2
+                    },
+                    {
+                        "nmIdentificador": "4617333131575677336",
+                        "nmTipoRenovacao": "Monitorada",
+                        "nrTipoRenovacao": 3
+                    }
+                ],
+                "nmOferta": "BB Seguro Residencial",
+                "nrOferta": 20200,
+                "nrPeriodicidadeContratacao": 0,
+                "nrVersaoOferta": 1,
+                "periodicidadeContratacao": "null",
+                "qtMaxPeriodicidade": "0",
+                "qtMinPeriodicidade": "0",
+                "tpTempoPeriocidade": {
+                    
+                },
+                "txDescricaoOferta": "null"
+            },
+            {
+                "inSelecionado": false,
+                "lsChassi": [
+                    
+                ],
+                "lsObjetoSegurado": [
+                    
+                ],
+                "lsPlano": [
+                    
+                ],
+                "nmOferta": "Ciclic Residencial Básico",
+                "nrOferta": 20201,
+                "nrPeriodicidadeContratacao": 0,
+                "nrVersaoOferta": 1,
+                "qtMaxPeriodicidade": "0",
+                "qtMinPeriodicidade": "0",
+                "tpTempoPeriocidade": {
+                    
+                },
+                "txDescricaoOferta": "null"
+            },
+            {
+                "inSelecionado": false,
+                "lsChassi": [
+                    
+                ],
+                "lsObjetoSegurado": [
+                    
+                ],
+                "lsPlano": [
+                    
+                ],
+                "nmOferta": "BB Seguro Residencial Retrofit",
+                "nrOferta": 20202,
+                "nrPeriodicidadeContratacao": 0,
+                "nrVersaoOferta": 1,
+                "qtMaxPeriodicidade": "0",
+                "qtMinPeriodicidade": "0",
+                "tpTempoPeriocidade": {
+                    
+                },
+                "txDescricaoOferta": "null"
+            },
+            {
+                "inSelecionado": false,
+                "lsChassi": [
+                    
+                ],
+                "lsObjetoSegurado": [
+                    
+                ],
+                "lsPlano": [
+                    
+                ],
+                "nmOferta": "BB Seguro Residencial Retrofit - Não correntista",
+                "nrOferta": 10000,
+                "nrPeriodicidadeContratacao": 0,
+                "nrVersaoOferta": 1,
+                "qtMaxPeriodicidade": "0",
+                "qtMinPeriodicidade": "0",
+                "tpTempoPeriocidade": {
+                    
+                },
+                "txDescricaoOferta": "null"
+            },
+            {
+                "inSelecionado": false,
+                "lsChassi": [
+                    
+                ],
+                "lsObjetoSegurado": [
+                    
+                ],
+                "lsPlano": [
+                    
+                ],
+                "nmOferta": "BB Seguro Residencial Retrofit - BB Mobile",
+                "nrOferta": 10001,
+                "nrPeriodicidadeContratacao": 0,
+                "nrVersaoOferta": 1,
+                "qtMaxPeriodicidade": "0",
+                "qtMinPeriodicidade": "0",
+                "tpTempoPeriocidade": {
+                    
+                },
+                "txDescricaoOferta": "null"
+            }
+        ],
+        "lsProponente": [
+            {
+                "lsDocumento": [
+                    {
+                        "dtEmissao": "30-12-2007 14:27:43",
+                        "nmIdentificador": "6072334446096124315",
+                        "nmNumeroDocumento": "3565821309",
+                        "nmOrgaoExpedidor": "SSP-SP",
+                        "tpDocumento": "R"
+                    }
+                ],
+                "lsEmail": [
+                    {
+                        "inPrincipal": true,
+                        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                        "nmIdentificador": "5770242816885053601",
+                        "tpEmail": "C"
+                    }
+                ],
+                "lsEndereco": [
+                    {
+                        "inPrincipal": true,
+                        "nmBairro": "Santo Amaro",
+                        "nmCep": "04521000",
+                        "nmComplemento": "casa 2",
+                        "nmIdentificador": "5787496147466766991",
+                        "nmLogradouro": "Avenida Adolfo Pinheiro",
+                        "nmMunicipio": "São Paulo",
+                        "nmNumero": "1000",
+                        "nmPais": "Brasil",
+                        "nmUf": "SP",
+                        "tpEndereco": "R"
+                    }
+                ],
+                "lsTelefone": [
+                    {
+                        "inPrincipal": true,
+                        "nmContato": "Dwayne Johnson",
+                        "nmDdd": "11",
+                        "nmIdentificador": "5784117275192434330",
+                        "nmNumero": "953803043",
+                        "tpTelefone": "C"
+                    }
+                ],
+                "nmCpfCnpj": "64640851073",
+                "nmNome": "Dwayne Johnson",
+                "pessoaFisica": {
+                    "dtNascimento": "01/05/1980",
+                    "inUniaoEstavel": true,
+                    "nmFormaTratamento": "senhor",
+                    "nmNicho": "teste",
+                    "nmNomeSocial": "Mauricio",
+                    "ppe": {
+                        "dtFim": "2020-12-30 14:27:43",
+                        "dtInicio": "2020-01-01 14:27:43",
+                        "inPPE": true
+                    },
+                    "tpEstadoCivil": "Solteiro",
+                    "tpGenero": "Masculino",
+                    "tpSegmentacao": "N",
+                    "vlRenda": 0.0,
+                    "vlScore": 0.0
+                },
+                "tpProponente": {
+                    "nmDescricao": "pessoa física",
+                    "nrProponenteTipo": 1
+                },
+                "vlPercentualParticipacao": 100.0
+            }
+        ],
+        "meioCanal": {
+            "nmMeioCanal": "Mobile",
+            "nrMeioCanal": 1
+        },
+        "nmNumeroGrupoProduto": "0114",
+        "nrCotacao": 20200611000001,
+        "nrVersao": 1,
+        "pontoVenda": {
+            "nmPontoVenda": "Mobile",
+            "nrPontoVenda": 1
+        },
+        "situacao": {
+            "nmSituacao": "Em andamento",
+            "nrSituacao": 1
+        }
+    },
+    "message": "Ofertas selecionada com sucesso!",
+    "resource": "oferta",
+    "status": 200
+}

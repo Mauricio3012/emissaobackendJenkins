@@ -1,0 +1,27 @@
+
+
+Selecionar Plano HML
+
+URL utilizada é: https://apigateway.hml-cld.brasilseg.com.br/api/emissao/cotacao/plano
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "547f1d93-3295-4ee8-b0f9-f7fed4941aee",
+  "nrPlano": 7
+}
+
+Status code: 400
+Response time: 1623
+
+O Response é: 
+
+{
+    "errors": [
+        
+    ],
+    "message": "Não foi possível alterar o plano na cotação.",
+    "resource": "Plano"
+}
