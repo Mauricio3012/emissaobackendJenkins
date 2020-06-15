@@ -1,0 +1,28 @@
+
+
+Grava Periodicidade de Contratação
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/vigencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null",
+  "nrPeriodicidadeContratacao": 5,
+  "nrChassi": 2000
+}
+
+Status code: 403
+Response time: 1032
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-15T21:36:30.990+0000",
+    "status": 403,
+    "error": "Forbidden",
+    "message": "acesso negado",
+    "path": "/api/emissao/cotacao/vigencia"
+}

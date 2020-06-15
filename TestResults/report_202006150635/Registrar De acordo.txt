@@ -1,0 +1,26 @@
+
+
+Registrar De acordo
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/deacordo
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null"
+}
+
+Status code: 403
+Response time: 1441
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-15T21:36:33.728+0000",
+    "status": 403,
+    "error": "Forbidden",
+    "message": "acesso negado",
+    "path": "/api/emissao/cotacao/deacordo"
+}

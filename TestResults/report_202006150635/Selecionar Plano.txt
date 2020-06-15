@@ -1,0 +1,27 @@
+
+
+Selecionar Plano
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/plano
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null",
+  "nrPlano": 93
+}
+
+Status code: 403
+Response time: 1283
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-15T21:36:32.320+0000",
+    "status": 403,
+    "error": "Forbidden",
+    "message": "acesso negado",
+    "path": "/api/emissao/cotacao/plano"
+}

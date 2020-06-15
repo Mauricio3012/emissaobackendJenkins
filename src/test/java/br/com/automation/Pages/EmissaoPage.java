@@ -97,7 +97,7 @@ public class EmissaoPage {
 		if(url.contains("HML")) {
 			url_VALOR = "https://apigateway.hml-cld.brasilseg.com.br/";
 		}else {
-			url_VALOR = "https://apigateway2.dev-cld.brasilseg.com.br/";
+			url_VALOR = "https://apigateway.dev-cld.brasilseg.com.br/";
 		}
 	
 		String urlValidada = url.replace(" HML", "");
@@ -1530,10 +1530,10 @@ public class EmissaoPage {
 	}
 
 	public static void pegarToken() throws Exception {
-		nmIdSessao = restAssuredResponse.jsonPath().getString("nmIdSessao");
+//		nmIdSessao = restAssuredResponse.jsonPath().getString("nmIdSessao");
+	//Adaptado para Token Fixo
+		nmIdSessao = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU5MUL3OTMxORwiaYO{Ijoh`IR0cIL7Ly9uc3JpbFTtZGV3MVNsZB4hcmF{`VxzZVbtY29uMlJyIhvhY29ocll0b{qocm90bIMiOmrhQUNGT0NPX1KBIl0rHoVzZYKtYW1mHkoiQTOGU1NQY1JCIo1/UXzSX[WmiCKPkdi{kbc3iDp,8wZ,eFZyJ[O,oXt0[gw";
 		System.out.println(nmIdSessao);
-		nmIdTransacao = restAssuredResponse.jsonPath().getString("nmIdTransacao");
-		System.out.println(nmIdTransacao);
 	}
 
 	public static void capturaLocalizadorCotacao() throws Exception {

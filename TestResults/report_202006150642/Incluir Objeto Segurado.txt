@@ -1,3 +1,13 @@
+
+
+Incluir Objeto Segurado
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/objetosegurado
+
+Requisição POST
+
+O body utilizado é: 
+
 {
   "nrChassi": 2000,
   "nrChassiVersao": 1,
@@ -101,4 +111,15 @@
         
         }
     }
+}
+
+Status code: 400
+Response time: 1165
+
+O Response é: 
+
+{
+    "errors": "Cotacao não encontrada",
+    "message": "Cotacao não encontrada",
+    "resource": "ObjetoSegurado"
 }

@@ -1,0 +1,28 @@
+
+
+Selecionar Oferta
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/oferta
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null",
+  "nrOferta": 10001,
+  "nrOfertaVersao": 1
+}
+
+Status code: 403
+Response time: 1274
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-15T21:36:28.820+0000",
+    "status": 403,
+    "error": "Forbidden",
+    "message": "acesso negado",
+    "path": "/api/emissao/cotacao/oferta"
+}

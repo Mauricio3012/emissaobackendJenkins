@@ -1,0 +1,464 @@
+
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway2.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Juan Román Riquelme Maradona Veron",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Juan Román Riquelme Maradona Veron",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 1557
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-12 19:38:19.463327",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "c8f47dbd-40e5-44f7-904a-a044cb384ab4",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial",
+                    "nrOferta": 20000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico",
+                    "nrOferta": 20001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit",
+                    "nrOferta": 20002,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Testes",
+                    "nrOferta": 20003,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Testes",
+                    "nrOferta": 20004,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "Ciclic Residencial Básico Testes",
+                    "nrOferta": 20005,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit Emissao",
+                    "nrOferta": 20199,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - Não correntista",
+                    "nrOferta": 10000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - Não correntista",
+                    "nrOferta": 20200,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - BB Mobile",
+                    "nrOferta": 10001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - Daniel Batista",
+                    "nrOferta": 10020,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - Daniel Batista - de chassi ",
+                    "nrOferta": 10022,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "5856180700762116315",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4976834122163667183",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "5842299021060835132",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Juan Román Riquelme Maradona Veron",
+                            "nmDdd": "11",
+                            "nmIdentificador": "6057429806998803868",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Juan Román Riquelme Maradona Veron",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "ppe": {
+                            "dtFim": "2020-12-30 14:27:43",
+                            "dtInicio": "2020-01-01 14:27:43",
+                            "inPPE": true
+                        },
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": 20200612000055,
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "c8f47dbd-40e5-44f7-904a-a044cb384ab4",
+        "nrCotacao": 20200612000055,
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}

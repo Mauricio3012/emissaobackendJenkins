@@ -1,0 +1,32 @@
+
+
+Gerar Token
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/login
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+    "user_name": "usr_ultron_cotacao",
+    "password": "brasilSeg@123"
+}
+
+Status code: 200
+Response time: 4738
+
+O Response é: 
+
+{
+    "userName": "usr_ultron_cotacao",
+    "emailAddr": "t_tiagon@brasilseg.com.br",
+    "token": "eyKs`WQiNhHwR0SuSDQyORuzQjOpT3NiRVipSEuF`VBUPVSGc1KlTUFNRjuTXC8[WzhKWU1iLCKicGciNhKSUzH0OiJ9/dxJzdVHhOiJlO{g1NEj4Mi0x[VRmLUP0MjYuXUYzYh0iMWYv[kkyOVL{YTMhMBJjb3etaXRwNldyb2WvcyI7VxJjb2SiY2FwHhwiZ383ZXJtXV5jYRKeLCJmelVudG8qZCI7HlI4MkmiNTM3MUc2MFTuNDQ2Ox04NlL4LTllLEI2YlP0ZGYyOxIsIoSwa2VtY2VzZRH7ImFkX3VzcxHrInNkc2BlIknhYXd{MlNvZ34qdG8tb3lnblmtLnV{[YIuYVSuaW4hMBJhdYSnX3RqcVUiOkD0OTIxOUY5OEPrIml{bxI6Ili1dHB{NmwvXB8kb2dt`YRvLVmjcC50bx1lYYO1LTEtXV1hel8tYXd{MlNvbWvwdXMu[VFzdB1yXzFELUNiSVq[ZyIrHlV4cBH7MTU4LkI2MET5NCwh`VF0IknyNTkxLkU2OUf1LCJpeFkiOhH3MTk{[UAyYx11YmM0MUQ2ZVPuOThjLB1lOUOhZjYy[UVmM{HhLCJkcFllboSgaWQhNhIyNlioY29wXYNsZlSsMDM2[UlzdYKybDZ{bBIsIoW{ZXJtXV1lIknhdXNxY2VsdIKwbl9kc2RhY3GwIn0/HsmqtJgCDhy,S747H2YpQECDDUeRpSN63Shfdb95XtV{oR4eHD6GnHISK4-BMgXkgX2F9vZmkYU2FR{OoKyIUMWCWh4GT_IIPORtc96qMtDCo@n8U@w2oyI48v7J2eC@9TqxXfm2N3yCNOJd38NPZvUgU4t3vP3Jyl8@E2SKjbYJUcdBDDE@0,TDCtDjcgFPH9QuBX7^X-KdbvMvufpnRSu1tiB9dbb,jbiXMSySx@sfwNyeQI4wf8T71NRfCCbcB0mQvefIyf0_tCq2Ml8vFnBxy8pTKsyt7IitD^C5lJnRjUbuINK6ebYiC{NdY,wIk2dy[VTkTR7JJY1X3tDjaP",
+    "profile": [
+        "COTACAO",
+        "GOVERNANCA"
+    ],
+    "nmIdSessao": "2b75e738-b7df-45e8-b54d-7fcfc45bcfa3",
+    "date": "2020-06-15 09:36:24",
+    "expiredAt": null
+}

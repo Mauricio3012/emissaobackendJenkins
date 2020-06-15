@@ -1,0 +1,29 @@
+
+
+Selecionar Assistência
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/assistencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "null",
+  	"nrAssistencia": 17,
+	"nrChassi": 2000,
+	"nrVersaoChassi": 1
+}
+
+Status code: 403
+Response time: 1326
+
+O Response é: 
+
+{
+    "timestamp": "2020-06-15T21:36:35.232+0000",
+    "status": 403,
+    "error": "Forbidden",
+    "message": "acesso negado",
+    "path": "/api/emissao/cotacao/assistencia"
+}
