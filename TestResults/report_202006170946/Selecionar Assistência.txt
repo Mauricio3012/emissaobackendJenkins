@@ -1,0 +1,29 @@
+
+
+Selecionar Assistência
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao/assistencia
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+	"nrLocalizador": "20200617000004",
+  	"nrAssistencia": 1,
+	"nrChassi": 2000,
+	"nrVersaoChassi": 1
+}
+
+Status code: 400
+Response time: 658
+
+O Response é: 
+
+{
+    "errors": [
+        
+    ],
+    "message": "Sem plano Selecionado",
+    "resource": "Assistencia"
+}

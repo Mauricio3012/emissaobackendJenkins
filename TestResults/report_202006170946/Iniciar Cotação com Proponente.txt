@@ -1,0 +1,249 @@
+
+
+Iniciar Cotação com Proponente
+
+URL utilizada é: https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao
+
+Requisição POST
+
+O body utilizado é: 
+
+{
+  "canal": {
+    "nmCanal": "Banco do Brasil",
+    "nrCanal": 1
+  },
+  "meioCanal": {
+    "nmMeioCanal": "Mobile",
+    "nrMeioCanal": 1
+  },
+  "nrGrupoProduto": "0114",
+  "pontoVenda": {
+    "nmPontoVenda": "Mobile",
+    "nrPontoVenda": 1
+  },
+  "proponente": {
+    "lsDocumento": [
+      {
+        "dtEmissao": "30-12-2007 14:27:43",
+        "nmNumeroDocumento": "3565821309",
+        "nmOrgaoExpedidor": "SSP-SP",
+        "tpDocumento": "R"
+      }
+    ],
+    "lsEmail": [
+      {
+        "inPrincipal": 0,
+        "localizador": "1",
+        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "tpEmail": "C"
+      }
+    ],
+    "lsEndereco": [
+      {
+        "inPrincipal": 0,
+        "nmBairro": "Santo Amaro",
+        "nmCep": "04521000",
+        "nmComplemento": "casa 2",
+        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmMunicipio": "São Paulo",
+        "nmNumero": "1000",
+        "nmPais": "Brasil",
+        "nmUf": "SP",
+        "nrLocalizador": "1",
+        "nrSequencial": 0,
+        "tpEndereco": "R"
+      }
+    ],
+    "lsTelefone": [
+      {
+        "inPrincipal": true,
+        "localizador": "1",
+        "nmContato": "Juan Román Riquelme Maradona Veron",
+        "nmDdd": "11",
+        "nmNumero": "953803043",
+        "tpTelefone": "C"
+      }
+    ],
+    "nmCpfCnpj": "64640851073",
+    "nmNome": "Juan Román Riquelme Maradona Veron",
+    "nrCodigoMci": 0,
+    "pessoaFisica": {
+      "ppe": {
+        "dtFim": "2020-12-30 14:27:43",
+        "dtInicio": "2020-01-01 14:27:43",
+        "inPPE": true
+      },
+      "dtNascimento": "01/05/1980",
+      "inUniaoEstavel": true,
+      "nmFormaTratamento": "senhor",
+      "nmNicho": "teste",
+      "nmNomeSocial": "Mauricio",
+      "tpEstadoCivil": "Solteiro",
+      "tpGenero": "Masculino",
+      "tpSegmentacao": "N",
+      "vlRenda": 0,
+      "vlScore": 0
+    },
+    "tpProponente": {
+      "nmDescricao": "pessoa física",
+      "nrProponenteTipo": 1
+    }
+  }
+}
+
+Status code: 200
+Response time: 1646
+
+O Response é: 
+
+{
+    "dados": {
+        "cotacao": {
+            "canal": {
+                "nmCanal": "Banco do Brasil",
+                "nrCanal": 1
+            },
+            "dadosCobranca": {
+                
+            },
+            "dtAlteracao": "null",
+            "dtCotacao": "2020-06-17 12:47:27.795329",
+            "dtFimVigencia": "null",
+            "localizadorCotacao": "20200617000004",
+            "lsAlerta": [
+                
+            ],
+            "lsOferta": [
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - BB Mobile",
+                    "nrOferta": 10001,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                },
+                {
+                    "lsChassi": [
+                        
+                    ],
+                    "lsObjetoSegurado": [
+                        
+                    ],
+                    "lsPlano": [
+                        
+                    ],
+                    "nmOferta": "BB Seguro Residencial Retrofit - Não correntista",
+                    "nrOferta": 10000,
+                    "nrPeriodicidadeContratacao": 0,
+                    "nrVersaoOferta": 1,
+                    "qtMaxPeriodicidade": 0,
+                    "qtMinPeriodicidade": 0,
+                    "tpTempoPeriocidade": {
+                        
+                    },
+                    "txDescricaoOferta": "null"
+                }
+            ],
+            "lsProponente": [
+                {
+                    "lsDocumento": [
+                        {
+                            "dtEmissao": "30-12-2007 14:27:43",
+                            "nmIdentificador": "4706279290568875525",
+                            "nmNumeroDocumento": "3565821309",
+                            "nmOrgaoExpedidor": "SSP-SP",
+                            "tpDocumento": "R"
+                        }
+                    ],
+                    "lsEmail": [
+                        {
+                            "inPrincipal": true,
+                            "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+                            "nmIdentificador": "4706280669230062962",
+                            "tpEmail": "C"
+                        }
+                    ],
+                    "lsEndereco": [
+                        {
+                            "inPrincipal": true,
+                            "nmBairro": "Santo Amaro",
+                            "nmCep": "04521000",
+                            "nmComplemento": "casa 2",
+                            "nmIdentificador": "4688528963556184050",
+                            "nmLogradouro": "Avenida Adolfo Pinheiro",
+                            "nmMunicipio": "São Paulo",
+                            "nmNumero": "1000",
+                            "nmPais": "Brasil",
+                            "nmUf": "SP",
+                            "tpEndereco": "R"
+                        }
+                    ],
+                    "lsTelefone": [
+                        {
+                            "inPrincipal": true,
+                            "nmContato": "Juan Román Riquelme Maradona Veron",
+                            "nmDdd": "11",
+                            "nmIdentificador": "5859184582223121752",
+                            "nmNumero": "953803043",
+                            "tpTelefone": "C"
+                        }
+                    ],
+                    "nmCpfCnpj": "64640851073",
+                    "nmNome": "Juan Román Riquelme Maradona Veron",
+                    "pessoaFisica": {
+                        "dtNascimento": "01/05/1980",
+                        "inUniaoEstavel": true,
+                        "nmFormaTratamento": "senhor",
+                        "nmNicho": "teste",
+                        "nmNomeSocial": "Mauricio",
+                        "tpEstadoCivil": "Solteiro",
+                        "tpGenero": "Masculino",
+                        "tpSegmentacao": "N",
+                        "vlRenda": "null",
+                        "vlScore": "null"
+                    },
+                    "tpProponente": {
+                        "nmDescricao": "pessoa física",
+                        "nrProponenteTipo": 1
+                    },
+                    "vlPercentualParticipacao": 100
+                }
+            ],
+            "meioCanal": {
+                "nmMeioCanal": "Mobile",
+                "nrMeioCanal": 1
+            },
+            "nmNumeroGrupoProduto": "0114",
+            "nrCotacao": "20200617000004",
+            "nrVersao": 1,
+            "pontoVenda": {
+                "nmPontoVenda": "Mobile",
+                "nrPontoVenda": 1
+            },
+            "situacao": {
+                "nmSituacao": "Em andamento",
+                "nrSituacao": 1
+            }
+        },
+        "localizadorCotacao": "20200617000004",
+        "nrCotacao": "20200617000004",
+        "nrVersao": 1
+    },
+    "message": "Cotação iniciada com sucesso",
+    "resource": "Cotacao",
+    "status": 200
+}

@@ -608,9 +608,9 @@ public class EmissaoPage {
 					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSegurado.json");
 					jsonBodyPost = jsonBodyPostGravaObjetoSegurado.replace(
-							"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
+							"\"nrChassi\": 2000,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
 									+ "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-							"\"nrChassi\": 10001,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
+							"\"nrChassi\": 2000,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
 									+ localizadorCotacaoCapturado + "\"")
 							.trim();
 				}
