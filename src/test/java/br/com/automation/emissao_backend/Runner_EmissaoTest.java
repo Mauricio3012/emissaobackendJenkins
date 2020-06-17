@@ -21,7 +21,7 @@ import io.qameta.allure.Step;
 @SuppressWarnings("deprecation")
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/br/com/automation/features/",glue = {""},plugin = { "de.monochromata.cucumber.report.PrettyReports:target/cucumber" }, tags = {
-"@FluxoCotacaoComProponenteMassa"}, monochrome = true, dryRun = false)
+"@FluxoCotacaoComProponente"}, monochrome = true, dryRun = false)
 public class Runner_EmissaoTest {
 	
 		@BeforeClass
