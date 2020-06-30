@@ -44,8 +44,7 @@ Funcionalidade: Fluxo de Cotação End-to-End Backend
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Grava Contrato HML"
     E envio o comando POST para o fluxo de cotação
-    Então a proposta é gerada corretamente
-    E o status de retorno é 200 e o tempo de resposta é menor ou igual a 10000 milisegundos
+    Então o status de retorno é 200 e o tempo de resposta é menor ou igual a 10000 milisegundos
     
   @FluxoCotacaoComProponenteDoisObjetos
   Cenario: Fluxo de Cotação Backend com Proponente

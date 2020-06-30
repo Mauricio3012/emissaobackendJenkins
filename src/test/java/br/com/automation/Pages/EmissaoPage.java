@@ -77,7 +77,7 @@ public class EmissaoPage {
 	public static String tokenCapturado = "";
 	public static String localizadorCotacaoCapturado = "";
 	public static String nmIdSessao = "";
-	public static String nmIdSessaoHML = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU3MEb1MjYvOxwiaYO{Ijoh`IR0cIL7Ly9ibFlnYYS2YXkt[FV2LVOrZC5hblFzaVy{ZWctX39tLlKxIiwhX39nblm1bzpobl91cILhOlshS1VSQTSQUl9PTj9UT1OQTE8hYRwidYOmcm5icVUiOhK{aW5qb2RybxK8.L8yiQuaSeh9x0S3[oviig[6BldUkJ2ywWUF8Uf,gYVI";
+	public static String nmIdSessaoHML = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU4OUPyNzM{LhwiaYO{Ijoh`IR0cIL7Ly9uc3JpbFTtZGV3MVNsZB4hcmF{`VxzZVbtY29uMlJyIhvhY29ocll0b{qocm90bIMiOmrhTkFQY1NPUmKGTlRKT0RBIm1rInV{[YJuYV0mIjohUjFPX1OQUlJGUmRJU0SCIn0/^p5vWCgg55kQQgpYUjB6bReTo[80UspxSmRUj[vC1`v";
 	public static String nmIdTransacao = "";
 	public static String numeroProposta = "";
 	public static String listinha5;
@@ -599,9 +599,9 @@ public class EmissaoPage {
 					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSeguradoHML.json");
 					jsonBodyPost = jsonBodyPostGravaObjetoSegurado.replace(
-							"\"nrChassi\": 10100,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
+							"\"nrChassi\": 2000,\r\n" + "  \"nrChassiVersao\": 1,\r\n"
 									+ "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-							"\"nrChassi\": 10100,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
+							"\"nrChassi\": 2000,\r\n" + "  \"nrChassiVersao\": 1,\r\n" + "	\"nrLocalizador\": \""
 									+ localizadorCotacaoCapturado + "\"")
 							.trim();
 				}else {				
@@ -638,12 +638,22 @@ public class EmissaoPage {
 				break;
 
 			case "Selecionar Plano":
-				String jsonBodyPostGravaPlano = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlano.json");
-				jsonBodyPost = jsonBodyPostGravaPlano
-						.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
-						.trim();
+				
+				if(cenario.contains("HML")) {				
+					String jsonBodyPostGravaPlano = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoHML.json");
+					jsonBodyPost = jsonBodyPostGravaPlano
+							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}else {				
+					String jsonBodyPostGravaPlano = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlano.json");
+					jsonBodyPost = jsonBodyPostGravaPlano
+							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				}
 
 				break;
 
