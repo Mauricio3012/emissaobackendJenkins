@@ -1,0 +1,71 @@
+{
+	"localizadorCotacao": "{{localizador}}",
+	"proponente": {
+		"lsDocumento": [
+			{
+				"dtEmissao": "30-12-2007 14:27:43",
+				"nmNumeroDocumento": "63078793001",
+				"nmOrgaoExpedidor": "SSP-SP",
+				"tpDocumento": 20
+			}
+		],
+		"lsEmail": [
+			{
+				"inPrincipal": 0,
+				"localizador": "1",
+				"nmEmail": "fabio.almeida@gmail.com",
+				"tpEmail": "C"
+			}
+		],
+		"lsEndereco": [
+			{
+				"inPrincipal": 0,
+				"nmBairro": "Santo Amaro",
+				"nmCep": "04521000",
+				"nmComplemento": "casa 2",
+				"nmLogradouro": "Avenida Adolfo Pinheiro",
+				"nmMunicipio": "São Paulo",
+				"nmNumero": "1000",
+				"nmPais": "Brasil",
+				"nmUf": "SP",
+				"nrLocalizador": "1",
+				"nrSequencial": 0,
+				"tpEndereco": "R"
+			}
+		],
+		"lsTelefone": [
+			{
+				"inPrincipal": true,
+				"localizador": "1",
+				"nmContato": "Mauricio",
+				"nmDdd": "11",
+				"nmNumero": "941457667",
+				"tpTelefone": "C"
+			}
+		],
+		"nmCpfCnpj": "99909120097",
+		"nmNome": "Fabio",
+		"nrCodigoMci": 0,
+		"pessoaFisica": {
+			"ppe": {
+				"dtFim": "2020-12-30 14:27:43",
+				"dtInicio": "2020-01-01 14:27:43",
+				"inPPE": true
+			},
+			"dtNascimento": "01/12/1985",
+			"inUniaoEstavel": true,
+			"nmFormaTratamento": "senhor",
+			"nmNicho": "teste",
+			"nmNomeSocial": "Mauricio",
+			"tpEstadoCivil": "Solteiro",
+			"tpGenero": "Masculino",
+			"tpSegmentacao": "N",
+			"vlRenda": 0,
+			"vlScore": 0
+		},
+		"tpProponente": {
+			"nmDescricao": "Conjuge",
+			"nrProponenteTipo": 2
+		}
+	}
+}

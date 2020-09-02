@@ -13,6 +13,10 @@ Funcionalidade: Fluxo de Cotação End-to-End Backend
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Incluir Objeto Segurado"
     E envio o comando POST para o fluxo de cotação
+    E carrego a URL de "Incluir Beneficiário"
+    E envio o comando POST para o fluxo de cotação
+    E carrego a URL de "Incluir Proponente"
+    E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Grava Periodicidade de Contratação"
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Selecionar Plano"

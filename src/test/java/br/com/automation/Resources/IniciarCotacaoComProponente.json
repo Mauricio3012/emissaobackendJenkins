@@ -1,7 +1,7 @@
 {
   "canal": {
     "nmCanal": "Banco do Brasil",
-    "nrCanal": 1
+    "nrCanal": 3
   },
   "meioCanal": {
     "nmMeioCanal": "Mobile",
@@ -18,7 +18,7 @@
         "dtEmissao": "30-12-2007 14:27:43",
         "nmNumeroDocumento": "3565821309",
         "nmOrgaoExpedidor": "SSP-SP",
-        "tpDocumento": "R"
+        "tpDocumento": 20
       }
     ],
     "lsEmail": [
@@ -49,14 +49,14 @@
       {
         "inPrincipal": true,
         "localizador": "1",
-        "nmContato": "Juan Román Riquelme Maradona Veron",
+        "nmContato": "Mauricio Oliveira",
         "nmDdd": "11",
         "nmNumero": "953803043",
         "tpTelefone": "C"
       }
     ],
     "nmCpfCnpj": "64640851073",
-    "nmNome": "Juan Román Riquelme Maradona Veron",
+    "nmNome": "Mauricio Oliveira",
     "nrCodigoMci": 0,
     "pessoaFisica": {
       "ppe": {

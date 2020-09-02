@@ -1,28 +1,15 @@
 {
-  "nrChassi": 2000,
-  "nrChassiVersao": 1,
-  "nrLocalizador": "c90b49cf-ee1a-4214-9c45-8ac2dedee5fb",
+    "nmIdentificadorChassi": "{{nmIdentificadorChassi}}",
+    "localizadorCotacao": "{{localizador}}",
     "objetoSegurado": {
-        "lsCobertura": [
-            {
-                "nmCobertura": "Danos eletrico",
-                "nrCobertura": 12,
-                "vlImportanciaSegurada": 10000
-            }
-        ],
-         "objeto":{
+        "objeto": {
             "obLogradouro": {
-                "nrPergunta": "2",
-                "inObrigatorio": true,
-                "nmResposta": "Rua Canario",
-                "nmPergunta": "Logradouro",
-                "nmPropriedade": "obLogradouro",
-                "nmTipo": "string"
+                "nmResposta": "Rua Luiz correia de melo"
             },
             "obCep": {
                 "nrPergunta": "1",
                 "inObrigatorio": true,
-                "nmResposta": "04521000",
+                "nmResposta": "04635010",
                 "nmPergunta": "CEP",
                 "nmPropriedade": "obCEP",
                 "nmTipo": "string"
@@ -38,7 +25,7 @@
             "obBairro": {
                 "nrPergunta": "5",
                 "inObrigatorio": true,
-                "nmResposta": "Moema",
+                "nmResposta": "Vila Cruzeiro",
                 "nmPergunta": "Bairro",
                 "nmPropriedade": "obBairro",
                 "nmTipo": "string"
@@ -59,14 +46,6 @@
                 "nmPropriedade": "obCodigoMunicipioIBGE",
                 "nmTipo": "texto"
             },
-            "obPais": {
-                "nrPergunta": "8",
-                "inObrigatorio": true,
-                "nmResposta": "Brasil",
-                "nmPergunta": "Qual o país da residência?",
-                "nmPropriedade": "obPais",
-                "nmTipo": "string"
-            },
             "obNumeroLogradouro": {
                 "nrPergunta": "3",
                 "inObrigatorio": true,
@@ -83,22 +62,13 @@
                 "nmPropriedade": "obMunicipio",
                 "nmTipo": "string"
             },
-            "obTipoDeImovel":{
-            	"nmPergunta": "Qual o tipo de imóvel?",
-                    "nmPropriedade": "obTipodeImovel",
-                    "nmResposta": "Casa",
-                    "nmTipo": "Seleção única",
-                    "nrPergunta": 1
+            "obTipoDeImovel": {
+                "nmResposta": "Casa"
             },
-            "obTipoDeUtilizacao":{
-            "nmPergunta": "Qual utilização do imóvel?",
-                    "nmPropriedade": "obTipodeUtilizacao",
-                    "nmResposta": "Lazer",
-                    "nmTipo": "Seleção única",
-                    "nrPergunta": 4	
+            "obTipoDeUtilizacao": {
+                "nmResposta": "Lazer"
+               
             }
-        
-        
         }
     }
 }

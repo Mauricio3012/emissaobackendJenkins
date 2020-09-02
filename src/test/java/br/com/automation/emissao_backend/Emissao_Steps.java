@@ -42,12 +42,12 @@ public class Emissao_Steps {
 		cotacaoPage.emitirCotacao();
 	}
 
-	@Step("Emito uma proposta pela Cotação para um cenário de Beneficiário")
-	@Dado("que emiti uma proposta pela Cotação para um cenário de \"(.*?)\"$")
-	public void emitir_Proposta_Cotacao_Beneficiario(String cenario) throws Exception {
-		cotacaoPage.emitirCotacaoBeneficiario(cenario);
-		cotacaoPage.capturarLocalizadorObjetoSegurado();
-	}
+//	@Step("Emito uma proposta pela Cotação para um cenário de Beneficiário")
+//	@Dado("que emiti uma proposta pela Cotação para um cenário de \"(.*?)\"$")
+//	public void emitir_Proposta_Cotacao_Beneficiario(String cenario) throws Exception {
+//		cotacaoPage.emitirCotacaoBeneficiario(cenario);
+//		cotacaoPage.capturarLocalizadorObjetoSegurado();
+//	}
 
 	@Step("O Token é gerado")
 	@Dado("que o Token é gerado")
@@ -88,22 +88,22 @@ public class Emissao_Steps {
 		}	}
 	}
 
-	@Step("Envio o comando POST para Beneficiário")
-	@Quando("envio o comando POST para \"([^\"]*)\"$")
-	public void envia_Post_Beneficiario(String tipoBeneficiario) throws Exception {
-		telaInicialPage.enviaPOSTBeneficiario(tipoBeneficiario, cenarioCucumber);
-		
-		if(EmissaoPage.responseCode==407) {
-		for ( int i= 0; i> 3; i++ )
-		{
-			telaInicialPage.enviaPOSTBeneficiario(tipoBeneficiario, cenarioCucumber);	
-			
-			if (EmissaoPage.responseCode==200) {
-				break;
-			}
-		}
-		}	
-	}
+//	@Step("Envio o comando POST para Beneficiário")
+//	@Quando("envio o comando POST para \"([^\"]*)\"$")
+//	public void envia_Post_Beneficiario(String tipoBeneficiario) throws Exception {
+//		telaInicialPage.enviaPOSTBeneficiario(tipoBeneficiario, cenarioCucumber);
+//		
+//		if(EmissaoPage.responseCode==407) {
+//		for ( int i= 0; i> 3; i++ )
+//		{
+//			telaInicialPage.enviaPOSTBeneficiario(tipoBeneficiario, cenarioCucumber);	
+//			
+//			if (EmissaoPage.responseCode==200) {
+//				break;
+//			}
+//		}
+//		}	
+//	}
 
 	@Step("Envio o comando POST")
 	@Quando("envio o comando POST")

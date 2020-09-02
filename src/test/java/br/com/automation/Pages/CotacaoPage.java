@@ -234,15 +234,15 @@ public class CotacaoPage {
 
 	}
 
-	public static void capturarLocalizadorObjetoSegurado() throws Exception {
-
-		RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao";
-	
-		
-		emissaoPage.enviaGETBeneficiario("Incluir Beneficiário");
-		emissaoPage.capturaIdentificadorObjetoSegurado();
-
-	}
+//	public static void capturarLocalizadorObjetoSegurado() throws Exception {
+//
+//		RestAssured.baseURI = "https://apigateway.dev-cld.brasilseg.com.br/api/emissao/cotacao";
+//	
+//		
+//		emissaoPage.enviaGETBeneficiario("Incluir Beneficiário");
+//		emissaoPage.capturaIdentificadorObjetoSegurado();
+//
+//	}
 
 
 }
