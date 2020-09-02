@@ -78,7 +78,9 @@ public class EmissaoPage {
 	public static String localizadorCotacaoCapturado = "";
 	public static String identificadorOferta = "";
 	public static String identificadorChassi = "";
-	public static String identificadorPeriodicidade = "";
+	public static String identificadorPeriodicidade = "";	
+	public static String identificadorPlano= "";
+	public static String identificadorPlanoPagamento = "";
 	public static String nmIdSessao = "";
 	public static String nmIdSessaoHML = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU4OUPyNzM{LhwiaYO{Ijoh`IR0cIL7Ly9uc3JpbFTtZGV3MVNsZB4hcmF{`VxzZVbtY29uMlJyIhvhY29ocll0b{qocm90bIMiOmrhTkFQY1NPUmKGTlRKT0RBIm1rInV{[YJuYV0mIjohUjFPX1OQUlJGUmRJU0SCIn0/^p5vWCgg55kQQgpYUjB6bReTo[80UspxSmRUj[vC1`v";
 	public static String nmIdTransacao = "";
@@ -337,6 +339,10 @@ public class EmissaoPage {
 
 		case "Registrar De acordo":
 			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/deacordo";
+			break;
+			
+		case "Selecionar Plano de Pagamento":
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/planopagamento";
 			break;
 
 		case "Selecionar Assistência":
@@ -703,15 +709,27 @@ public class EmissaoPage {
 					String jsonBodyPostGravaPlano = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoHML.json");
 					jsonBodyPost = jsonBodyPostGravaPlano
-							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.replace("{\r\n" + 
+									"  \"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
+									"  \"nmIdentificadorPlano\": \"{{nmIdentificadorPlano}}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorPlano\": \"" + identificadorPlano + "\"\r\n" + 
+									"}")
 							.trim();
 				} else {
 					String jsonBodyPostGravaPlano = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlano.json");
 					jsonBodyPost = jsonBodyPostGravaPlano
-							.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-									"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+							.replace("{\r\n" + 
+									"  \"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
+									"  \"nmIdentificadorPlano\": \"{{nmIdentificadorPlano}}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorPlano\": \"" + identificadorPlano + "\"\r\n" + 
+									"}")
 							.trim();
 				}
 
@@ -721,11 +739,42 @@ public class EmissaoPage {
 				String jsonBodyPostRegistraDeAcordo = generateStringFromResource(
 						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\RegistraDeAcordo.json");
 				jsonBodyPost = jsonBodyPostRegistraDeAcordo
-						.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
+						.replace("{\r\n" + "  \"localizadorCotacao\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
+								"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\"")
 						.trim();
 
 				break;
+				
+				
+			case "Selecionar Plano de Pagamento":
+				if (cenario.contains("HML")) {
+					String jsonBodyPostSelecionaPlanoPagamento = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoPagamentoHML.json");
+					jsonBodyPost = jsonBodyPostSelecionaPlanoPagamento
+							.replace("{\r\n" + 
+									"	\"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
+									"	\"nmIdentificadorPlanoPagamento\": \"{{nmIdentificadorPlanoPagamento}}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorPlanoPagamento\": \"" + identificadorPlanoPagamento + "\"\r\n" + 
+									"}")
+							.trim();
+				} else {
+					String jsonBodyPostSelecionaPlanoPagamento = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoPagamento.json");
+					jsonBodyPost = jsonBodyPostSelecionaPlanoPagamento
+							.replace("{\r\n" + 
+									"	\"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
+									"	\"nmIdentificadorPlanoPagamento\": \"{{nmIdentificadorPlanoPagamento}}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorPlanoPagamento\": \"" + identificadorPlanoPagamento + "\"\r\n" + 
+									"}")
+							.trim();
+				}	
+			break;
 
 			case "Selecionar Assistência":
 				String jsonBodyPostSelecionaAssistencia = generateStringFromResource(
@@ -751,6 +800,8 @@ public class EmissaoPage {
 			if (nomeAPI.contains("Selecionar Oferta")) {
 				capturaIdentificadorChassi();
 				capturaIdentificadorPeriodicidade();
+				capturaIdentificadorPlano();
+				capturaIdentificadorPlanoPagamento();
 			}
 
 			if (nomeAPI.contains("Incluir Objeto Segurado")) {
@@ -1638,6 +1689,21 @@ public class EmissaoPage {
 				.getString("dados.cotacao.lsOferta[0].lsChassi[0].periodicidadeContratacao.nmIdentificadorPeriodicidadeContratacao");
 		System.out.println(identificadorPeriodicidade);
 	}
+	
+	public static void capturaIdentificadorPlano() throws Exception {
+		identificadorPlano = restAssuredResponse.jsonPath()
+				.getString("dados.cotacao.lsOferta[0].lsPlano[0].nmIdentificadorPlano");
+		System.out.println(identificadorPlano);
+	}
+	
+	public static void capturaIdentificadorPlanoPagamento() throws Exception {
+		identificadorPlanoPagamento = restAssuredResponse.jsonPath()
+				.getString("dados.cotacao.lsOferta[0].lsPlanoPagamento[0].nmIdentificadorPlanoPagamento");
+		System.out.println(identificadorPlanoPagamento);
+	}
+	
+	
+	
 	
 	public boolean validaPropostaBackend() {
 		try {

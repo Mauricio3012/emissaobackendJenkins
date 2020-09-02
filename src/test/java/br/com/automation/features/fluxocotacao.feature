@@ -23,6 +23,8 @@ Funcionalidade: Fluxo de Cotação End-to-End Backend
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Registrar De acordo"
     E envio o comando POST para o fluxo de cotação
+    E carrego a URL de "Selecionar Plano de Pagamento"
+    E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Selecionar Assistência"
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Grava Contrato"
