@@ -1,7 +1,7 @@
 {
   "canal": {
     "nmCanal": "Banco do Brasil",
-    "nrCanal": 3
+    "nrCanal": 999
   },
   "meioCanal": {
     "nmMeioCanal": "Mobile",
@@ -16,7 +16,7 @@
     "lsDocumento": [
       {
         "dtEmissao": "30-12-2007 14:27:43",
-        "nmNumeroDocumento": "3565821309",
+        "nmNumeroDocumento": "162406629",
         "nmOrgaoExpedidor": "SSP-SP",
         "tpDocumento": 20
       }
@@ -25,19 +25,19 @@
       {
         "inPrincipal": 0,
         "localizador": "1",
-        "nmEmail": "mauricio.deoliveirajunior@gmail.com",
+        "nmEmail": "develop.web.mobile@gmail.com",
         "tpEmail": "C"
       }
     ],
     "lsEndereco": [
       {
         "inPrincipal": 0,
-        "nmBairro": "Santo Amaro",
-        "nmCep": "04521000",
-        "nmComplemento": "casa 2",
-        "nmLogradouro": "Avenida Adolfo Pinheiro",
+        "nmBairro": "Parque dos Bancários",
+        "nmCep": "03923005",
+        "nmComplemento": "apto 1803",
+        "nmLogradouro": "Rua Núcleo de Paris",
         "nmMunicipio": "São Paulo",
-        "nmNumero": "1000",
+        "nmNumero": "86",
         "nmPais": "Brasil",
         "nmUf": "SP",
         "nrLocalizador": "1",
@@ -55,8 +55,8 @@
         "tpTelefone": "C"
       }
     ],
-    "nmCpfCnpj": "64640851073",
-    "nmNome": "Mauricio Oliveira",
+    "nmCpfCnpj": "35852188069",
+    "nmNome": "Damien Lillard",
     "nrCodigoMci": 0,
     "pessoaFisica": {
       "ppe": {
@@ -64,12 +64,12 @@
         "dtInicio": "2020-01-01 14:27:43",
         "inPPE": true
       },
-      "dtNascimento": "01/05/1980",
+      "dtNascimento": "1993-12-26T00:00:00",
       "inUniaoEstavel": true,
       "nmFormaTratamento": "senhor",
       "nmNicho": "teste",
-      "nmNomeSocial": "Mauricio",
-      "tpEstadoCivil": "Solteiro",
+      "nmNomeSocial": "Testes",
+      "tpEstadoCivil": "Casado",
       "tpGenero": "Masculino",
       "tpSegmentacao": "N",
       "vlRenda": 0,

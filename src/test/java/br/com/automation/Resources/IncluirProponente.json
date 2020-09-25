@@ -1,5 +1,5 @@
 {
-	"localizadorCotacao": "{{localizador}}",
+	"localizadorCotacao": "${localizadorCotacao}",
 	"proponente": {
 		"lsDocumento": [
 			{
@@ -52,7 +52,7 @@
 				"dtInicio": "2020-01-01 14:27:43",
 				"inPPE": true
 			},
-			"dtNascimento": "01/12/1985",
+			"dtNascimento": "1993-12-26T00:00:00",
 			"inUniaoEstavel": true,
 			"nmFormaTratamento": "senhor",
 			"nmNicho": "teste",

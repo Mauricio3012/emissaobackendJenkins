@@ -20,12 +20,14 @@ Funcionalidade: Fluxo de Cotação End-to-End Backend
     E carrego a URL de "Grava Periodicidade de Contratação"
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Selecionar Plano"
-    E envio o comando POST para o fluxo de cotação
-    E carrego a URL de "Registrar De acordo"
-    E envio o comando POST para o fluxo de cotação
+    E envio o comando POST para o fluxo de cotação   
     E carrego a URL de "Selecionar Plano de Pagamento"
-    E envio o comando POST para o fluxo de cotação
+    E envio o comando POST para o fluxo de cotação  
     E carrego a URL de "Selecionar Assistência"
+    E envio o comando POST para o fluxo de cotação  
+    E carrego a URL de "Selecionar Parcelas"
+    E envio o comando POST para o fluxo de cotação   
+    E carrego a URL de "Registrar De acordo"
     E envio o comando POST para o fluxo de cotação
     E carrego a URL de "Grava Contrato"
     E envio o comando POST para o fluxo de cotação

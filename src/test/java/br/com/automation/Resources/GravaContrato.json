@@ -1,3 +1,9 @@
 {
-	"nrLocalizador": "5db92dd2-0557-496b-b2d5-624523b0c888"
+    "localizadorCotacao": "${localizadorCotacao}",
+    "dadoCartaoCredito": {
+        "cdSeguranca": "484",
+        "dtExpiracao": "09/2021",
+        "nrCartao": "5226662239152154",
+        "nrBandeiraCartao": 5
+    }
 }

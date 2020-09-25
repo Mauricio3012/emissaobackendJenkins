@@ -26,6 +26,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import br.com.automation.Utils.GerarCpfCnpj;
+
+import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
@@ -81,6 +83,8 @@ public class EmissaoPage {
 	public static String identificadorPeriodicidade = "";	
 	public static String identificadorPlano= "";
 	public static String identificadorPlanoPagamento = "";
+	public static String identificadorPacoteAssistencia = "";
+	public static String identificadorParcela = "";
 	public static String nmIdSessao = "";
 	public static String nmIdSessaoHML = "eyKicGciNhKIUzH0OiJ9/dxJqdFjhOiIyLEEwMU@xMTU1OBIsIlmidCI7LUU4OUPyNzM{LhwiaYO{Ijoh`IR0cIL7Ly9uc3JpbFTtZGV3MVNsZB4hcmF{`VxzZVbtY29uMlJyIhvhY29ocll0b{qocm90bIMiOmrhTkFQY1NPUmKGTlRKT0RBIm1rInV{[YJuYV0mIjohUjFPX1OQUlJGUmRJU0SCIn0/^p5vWCgg55kQQgpYUjB6bReTo[80UspxSmRUj[vC1`v";
 	public static String nmIdTransacao = "";
@@ -94,6 +98,7 @@ public class EmissaoPage {
 
 	private CotacaoPage cotacaoPage = new CotacaoPage();
 	private UtilsDB utilsdb = new UtilsDB();
+	Faker faker = new Faker();
 
 	public void carregaAPI(String url) {
 		nomeAPI = url;
@@ -354,6 +359,10 @@ public class EmissaoPage {
 //			requestspecs.header("Authorization", tokenCapturado);
 			requestspecs.contentType("application/pdf");
 			break;
+			
+		case "Selecionar Parcelas":
+			RestAssured.baseURI = url_VALOR + "api/emissao/cotacao/planopagamento/parcelamento";
+			break;		
 
 		// Configurador de regras
 
@@ -560,30 +569,32 @@ public class EmissaoPage {
 				break;
 
 			case "Grava Contrato":
-				String jsonArquivoAlteradoContrato = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\GravaContrato.json");
-				jsonBodyPost = jsonArquivoAlteradoContrato
-						.replace("{\r\n" + "	\"nrLocalizador\": \"5db92dd2-0557-496b-b2d5-624523b0c888\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
-						.trim();
-
+					String jsonBodyPostGravaContrato = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\GravaContrato.json");
+					jsonBodyPost = jsonBodyPostGravaContrato
+							.replace("{\r\n" + 
+									"    \"localizadorCotacao\": \"${localizadorCotacao}\"",
+									"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\"")
+							.trim();
+				
 				break;
 
-			case "Iniciar Cotação com Proponente":
-				jsonBodyPost = generateStringFromResource(starting
-						+ "\\src\\test\\java\\br\\com\\automation\\Resources\\IniciarCotacaoComProponente.json");
-
+			case "Iniciar Cotação com Proponente":			
+				String cpfAleatorio = geraCPF();
+				String nomeAleatorio = faker.name();
+				nomeAleatorio.replace("Mrs. ", "");
+				
+				String jsonBodyPostIniciarCotacao = generateStringFromResource(
+						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IniciarCotacaoComProponente.json");
+				jsonBodyPost = jsonBodyPostIniciarCotacao
+						.replace("  \"nmCpfCnpj\": \"35852188069\",\r\n" + 
+								"    \"nmNome\": \"Damien Lillard\",",
+								"  \"nmCpfCnpj\": \"" +  cpfAleatorio +  "\",\r\n" + 
+								"    \"nmNome\": \"" + nomeAleatorio +   "\",")
+						.trim();			
 				break;
 
 			case "Selecionar Oferta":
-				if (cenario.contains("HML")) {
-					String jsonBodyPostSelecionarOferta = generateStringFromResource(
-							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionarOfertaHML.json");
-					jsonBodyPost = jsonBodyPostSelecionarOferta
-							.replace("{\r\n" + "  \"localizadorCotacao\": \"5ef1ab41-c9bd-4b65-8adb-5d0c68298c79\"",
-									"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\"")
-							.trim();
-				} else {
 					String jsonBodyPostSelecionarOferta = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionarOferta.json");
 					String jsonBodyPostAnterior = jsonBodyPostSelecionarOferta
@@ -593,14 +604,11 @@ public class EmissaoPage {
 
 					jsonBodyPost = jsonBodyPostAnterior.replace("  \"nmIdentificadorOferta\": \"\"",
 							"  \"nmIdentificadorOferta\": \"" + identificadorOferta + "\"").trim();
-				}
-
 				break;
 
 			case "Incluir Objeto Segurado":
-				if (cenario.contains("HML")) {
 					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(starting
-							+ "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSeguradoHML.json");
+							+ "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSegurado.json");
 					jsonBodyPost = jsonBodyPostGravaObjetoSegurado
 							.replace(
 									"{\r\n" + "    \"nmIdentificadorChassi\": \"{{nmIdentificadorChassi}}\",\r\n"
@@ -608,31 +616,10 @@ public class EmissaoPage {
 									"{\r\n" + "	\"nmIdentificadorChassi\": \"" + identificadorChassi + "\",\r\n"
 											+ "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",")
 							.trim();
-				} else {
-					String jsonBodyPostGravaObjetoSegurado = generateStringFromResource(
-							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluiObjetoSegurado.json");
-					jsonBodyPost = jsonBodyPostGravaObjetoSegurado
-							.replace(
-									"{\r\n" + "    \"nmIdentificadorChassi\": \"{{nmIdentificadorChassi}}\",\r\n"
-											+ "    \"localizadorCotacao\": \"{{localizador}}\",",
-									"{\r\n" + "	\"nmIdentificadorChassi\": \"" + identificadorChassi + "\",\r\n"
-											+ "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",")
-							.trim();
-				}
 
 				break;
 
 			case "Incluir Beneficiário":
-				if (cenario.contains("HML")) {
-					String jsonBodyPostIncluirBeneficiario = generateStringFromResource(starting
-							+ "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluirBeneficiarioHML.json");
-					jsonBodyPost = jsonBodyPostIncluirBeneficiario.replace(
-							"{\r\n" + "	\"localizadorCotacao\": \"{{localizador}}\",\r\n"
-									+ "	\"nmIdentificadorObjetoSegurado\": \"{{nmIdentificadorObjetoSegurado}}\",",
-							"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n"
-									+ "	\"nmIdentificadorObjetoSegurado\": \"" + identificadorObjetoSegurado + "\",")
-							.trim();
-				} else {
 					String jsonBodyPostIncluirBeneficiario = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluirBeneficiario.json");
 					jsonBodyPost = jsonBodyPostIncluirBeneficiario.replace(
@@ -641,50 +628,19 @@ public class EmissaoPage {
 							"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n"
 									+ "	\"nmIdentificadorObjetoSegurado\": \"" + identificadorObjetoSegurado + "\",")
 							.trim();
-				}
-
 				break;
 				
-			case "Incluir Proponente":
-				
-				if (cenario.contains("HML")) {
-					String jsonBodyPostIncluiProponente = generateStringFromResource(starting
-							+ "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluirProponente.json");
-					jsonBodyPost = jsonBodyPostIncluiProponente
-							.replace("{\r\n" + 
-									"	\"localizadorCotacao\": \"{{localizador}}\",",
-									"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",")
-							.trim();
-				} else {
+			case "Incluir Proponente":			
 					String jsonBodyPostIncluiProponente = generateStringFromResource(
-							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluirProponenteHML.json");
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\IncluirProponente.json");
 					jsonBodyPost = jsonBodyPostIncluiProponente
 							.replace("{\r\n" + 
 									"	\"localizadorCotacao\": \"{{localizador}}\",",
 									"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",")
 							.trim();
-				}
-
 				break;
 
 			case "Grava Periodicidade de Contratação":
-
-				if (cenario.contains("HML")) {
-					String jsonBodyPostGravaPeriodicidade = generateStringFromResource(starting
-							+ "\\src\\test\\java\\br\\com\\automation\\Resources\\InformaPeriodicidadeHML.json");
-					jsonBodyPost = jsonBodyPostGravaPeriodicidade
-							.replace("{\r\n" + 
-									"  \"localizadorCotacao\": \"${localizadorCotacao}\",\r\n" + 
-									"  \"nmIdentificadorChassi\": \"${identificadorChassi}\",\r\n" + 
-									"  \"qtPeriodicidade\": 1,\r\n" + 
-									"  \"nmIdentificadorPeriodicidade\": \"${identificadorPeriodicidade}\"\r\n" + 
-									"}",
-									"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\","
-											+ "\"nmIdentificadorChassi\": \"" + identificadorChassi + "\","
-											+ "\"qtPeriodicidade\": \"" + 1 + "\","
-											+ "\"nmIdentificadorPeriodicidade\": \"" + identificadorPeriodicidade + "\"}")
-							.trim();
-				} else {
 					String jsonBodyPostGravaPeriodicidade = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\InformaPeriodicidade.json");
 					jsonBodyPost = jsonBodyPostGravaPeriodicidade
@@ -699,26 +655,9 @@ public class EmissaoPage {
 											+ "\"qtPeriodicidade\": \"" + 1 + "\","
 											+ "\"nmIdentificadorPeriodicidade\": \"" + identificadorPeriodicidade + "\"}")
 							.trim();
-				}
-
 				break;
 
 			case "Selecionar Plano":
-
-				if (cenario.contains("HML")) {
-					String jsonBodyPostGravaPlano = generateStringFromResource(
-							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoHML.json");
-					jsonBodyPost = jsonBodyPostGravaPlano
-							.replace("{\r\n" + 
-									"  \"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
-									"  \"nmIdentificadorPlano\": \"{{nmIdentificadorPlano}}\"\r\n" + 
-									"}",
-									"{\r\n" + 
-									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
-									"  \"nmIdentificadorPlano\": \"" + identificadorPlano + "\"\r\n" + 
-									"}")
-							.trim();
-				} else {
 					String jsonBodyPostGravaPlano = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlano.json");
 					jsonBodyPost = jsonBodyPostGravaPlano
@@ -731,8 +670,6 @@ public class EmissaoPage {
 									"  \"nmIdentificadorPlano\": \"" + identificadorPlano + "\"\r\n" + 
 									"}")
 							.trim();
-				}
-
 				break;
 
 			case "Registrar De acordo":
@@ -742,25 +679,9 @@ public class EmissaoPage {
 						.replace("{\r\n" + "  \"localizadorCotacao\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
 								"{\r\n" + "	\"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\"")
 						.trim();
-
 				break;
-				
-				
+								
 			case "Selecionar Plano de Pagamento":
-				if (cenario.contains("HML")) {
-					String jsonBodyPostSelecionaPlanoPagamento = generateStringFromResource(
-							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoPagamentoHML.json");
-					jsonBodyPost = jsonBodyPostSelecionaPlanoPagamento
-							.replace("{\r\n" + 
-									"	\"localizadorCotacao\": \"{{localizador}}\",\r\n" + 
-									"	\"nmIdentificadorPlanoPagamento\": \"{{nmIdentificadorPlanoPagamento}}\"\r\n" + 
-									"}",
-									"{\r\n" + 
-									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
-									"  \"nmIdentificadorPlanoPagamento\": \"" + identificadorPlanoPagamento + "\"\r\n" + 
-									"}")
-							.trim();
-				} else {
 					String jsonBodyPostSelecionaPlanoPagamento = generateStringFromResource(
 							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaPlanoPagamento.json");
 					jsonBodyPost = jsonBodyPostSelecionaPlanoPagamento
@@ -773,19 +694,37 @@ public class EmissaoPage {
 									"  \"nmIdentificadorPlanoPagamento\": \"" + identificadorPlanoPagamento + "\"\r\n" + 
 									"}")
 							.trim();
-				}	
 			break;
 
 			case "Selecionar Assistência":
-				String jsonBodyPostSelecionaAssistencia = generateStringFromResource(
-						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaAssistencia.json");
-				jsonBodyPost = jsonBodyPostSelecionaAssistencia
-						.replace("{\r\n" + "  \"nrLocalizador\": \"c90b49cf-ee1a-4214-9c45-8ac2dedee5fb\"",
-								"{\r\n" + "	\"nrLocalizador\": \"" + localizadorCotacaoCapturado + "\"")
-						.trim();
-
+					String jsonBodyPostSelecionaAssistencia = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaAssistencia.json");
+					jsonBodyPost = jsonBodyPostSelecionaAssistencia
+							.replace("{\r\n" + 
+									"  \"localizadorCotacao\": \"${localizadorCotacao}\",\r\n" + 
+									"  \"nmIdentificadorPacoteAssistencia\": \"${identificadorPacoteAssistencia}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorPacoteAssistencia\": \"" + identificadorPacoteAssistencia + "\"\r\n" + 
+									"}")
+							.trim();
 				break;
-
+				
+			case "Selecionar Parcelas":
+					String jsonBodyPostSelecionaParcelas = generateStringFromResource(
+							starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\SelecionaParcelas.json");
+					jsonBodyPost = jsonBodyPostSelecionaParcelas
+							.replace("{\r\n" + 
+									"  \"localizadorCotacao\": \"${localizadorCotacao}\",\r\n" + 
+									"  \"nmIdentificadorParcela\": \"${identificadorParcelas}\"\r\n" + 
+									"}",
+									"{\r\n" + 
+									"  \"localizadorCotacao\": \"" + localizadorCotacaoCapturado + "\",\r\n" + 
+									"  \"nmIdentificadorParcela\": \"" + identificadorParcela+ "\"\r\n" + 
+									"}")
+							.trim();	
+			break;
 			}
 
 			restAssuredResponse = requestspecs.body(jsonBodyPost).post(RestAssured.baseURI);
@@ -806,8 +745,13 @@ public class EmissaoPage {
 
 			if (nomeAPI.contains("Incluir Objeto Segurado")) {
 				capturaIdentificadorObjetoSegurado();
+				capturaIdentificadorPacoteAssistencia();
 			}
-
+			
+			if (nomeAPI.contains("Selecionar Assistência")) {
+				capturaIdentificadorParcela();
+			}
+			
 			String metodo = "POST";
 
 			cenarioGlobal = cenario;
@@ -1702,8 +1646,17 @@ public class EmissaoPage {
 		System.out.println(identificadorPlanoPagamento);
 	}
 	
+	public static void capturaIdentificadorPacoteAssistencia() throws Exception {
+		identificadorPacoteAssistencia = restAssuredResponse.jsonPath()
+				.getString("dados.cotacao.lsOferta[0].lsChassi[0].lsPacoteAssistencia[0].nmIdentificadorPlanoPacoteAssistencia");
+		System.out.println(identificadorPacoteAssistencia);
+	}
 	
-	
+	public static void capturaIdentificadorParcela() throws Exception {
+		identificadorParcela = restAssuredResponse.jsonPath()
+				.getString("dados.cotacao.lsOferta[0].lsPlano[0].lsParcela[0].nmIdentificadorParcela");
+		System.out.println(identificadorParcela);
+	}
 	
 	public boolean validaPropostaBackend() {
 		try {
@@ -1711,7 +1664,7 @@ public class EmissaoPage {
 			restAssuredResponse.then().assertThat().body("message", equalTo("Cotação contrada com sucesso"));
 			restAssuredResponse.then().assertThat().body("status", equalTo(200));
 
-			numeroProposta = restAssuredResponse.jsonPath().getString("dados.propostas[0].nmNumeroProposta");
+			numeroProposta = restAssuredResponse.jsonPath().getString("dados.propostas[0].nrProposta");
 			System.out.println("O número da proposta capturado é  " + numeroProposta);
 
 			// Valida Data da Proposta
