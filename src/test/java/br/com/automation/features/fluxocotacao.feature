@@ -157,4 +157,14 @@ Funcionalidade: Fluxo de Cotação End-to-End Backend
       | "Iniciar Cotação com Proponente" |
       | "Iniciar Cotação com Proponente" |
 
+@PostmanExample1
+  Esquema do Cenario: Teste Postman
+    Quando carrego a URL de <tipo>
+    E envio o comando GET
+    E o status de retorno é 200 e o tempo de resposta é menor ou igual a 5000 milisegundos
+
+    Exemplos: 
+      | tipo                             |
+      | "Postman"												 |
+
       

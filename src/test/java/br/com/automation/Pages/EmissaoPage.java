@@ -400,8 +400,14 @@ public class EmissaoPage {
 			RestAssured.baseURI = url_VALOR + "api/emissao/regra/classeRegra";
 			requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
+		
+		case "Postman":
+			RestAssured.baseURI = "https://postman-echo.com/get";
+			//requestspecs.header("nmIdSessao", nmIdSessao);
+			break;
 
-		}
+	}
+
 
 	}
 
