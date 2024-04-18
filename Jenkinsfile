@@ -7,7 +7,7 @@ pipeline {
    stages {
       stage('teste API') {
          steps {
-            bat 'mvn test'
+            bat 'mvn clean install'
          }
       }
    }
