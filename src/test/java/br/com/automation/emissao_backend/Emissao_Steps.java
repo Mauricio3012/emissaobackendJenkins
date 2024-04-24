@@ -155,6 +155,25 @@ public class Emissao_Steps {
 			
 		}	
 	}}
+	
+	@Step("Envio o comando POST para Postman")
+	@Quando("envio o comando POST para Postman")
+	public void envia_PostPostman() throws InterruptedException {
+		telaInicialPage.enviaPOSTArquivoJson(telaInicialPage.nomeAPI);
+		
+		System.out.println((telaInicialPage.nomeAPI));
+		
+		if(EmissaoPage.responseCode==407) {
+		for ( int i= 0; i> 3; i++ )
+		{
+			telaInicialPage.enviaPOSTArquivoJson(telaInicialPage.nomeAPI);	
+			
+			if (EmissaoPage.responseCode==200) {
+				break;
+			}
+			
+		}	
+	}}
 
 	@Entao("verifico o retorno")
 	public void verificoRetorno() throws InterruptedException {

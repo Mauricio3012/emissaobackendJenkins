@@ -405,6 +405,11 @@ public class EmissaoPage {
 			RestAssured.baseURI = "https://postman-echo.com/get";
 			//requestspecs.header("nmIdSessao", nmIdSessao);
 			break;
+			
+		case "Postman Post":
+			RestAssured.baseURI = "https://postman-echo.com/post";
+			//requestspecs.header("nmIdSessao", nmIdSessao);
+			break;
 
 	}
 
@@ -731,6 +736,13 @@ public class EmissaoPage {
 									"}")
 							.trim();	
 			break;
+			
+			case "Postman Post":
+				String jsonBodyPostPostman = generateStringFromResource(
+						starting + "\\src\\test\\java\\br\\com\\automation\\Resources\\PostmanPost.json");
+				jsonBodyPost = jsonBodyPostPostman
+						.trim();	
+		break;
 			}
 
 			restAssuredResponse = requestspecs.body(jsonBodyPost).post(RestAssured.baseURI);
